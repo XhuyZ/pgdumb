@@ -1,10 +1,15 @@
-\CONNECTAuthDB;
-\i'./authnew.sql.';
-\CONNECTUserDB;
-\i'./usernew.sql';
-\CONNECTTripDB;
-\i'./tripfinally.sql';
-\CONNECTPaymentDB;
-\i'./paymentfinally.sql';
-\CONNECTChatDB;
-\i'./chatfinal.sql';
+\connect AuthDB;
+\i ./authnew.sql
+
+\connect UserDB;
+\i ./usernew.sql
+
+\connect TripDB;
+\i ./tripfinally.sql
+
+\connect PaymentDB;
+\i ./paymentfinally.sql
+
+\connect ChatDB;
+\i ./chatfinal.sql
+
