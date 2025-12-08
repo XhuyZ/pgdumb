@@ -1,0 +1,536 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 16.10 (Ubuntu 16.10-0ubuntu0.24.04.1)
+-- Dumped by pg_dump version 17.0
+
+-- Started on 2025-12-08 12:20:30
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 3532 (class 0 OID 19651)
+-- Dependencies: 216
+-- Data for Name: Trips; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+INSERT INTO public."Trips" VALUES ('d4e79751-9bce-4aff-91f7-7090abc3e330', 'df790517-7517-4172-aeb1-af0de8d1acf3', NULL, NULL, false, 'Hành Trình Sắc Màu Núi Chứa Chan', 'Mien Dong Bus Station', '106.71093990000001', '10.8158355', 'Núi Chứa Chan', '107.3766239', '10.9373345', '“Hành Trình Sắc Màu Núi Chứa Chan” dành cho những đôi chân muốn thử thách chính mình. Băng qua cầu tre, leo qua những bậc đá cổ, ngồi nghỉ giữa cảnh núi ôm mây — đó là khoảnh khắc mà tuổi trẻ cảm thấy đáng giá hơn bao giờ hết.', 'Draft', 3, 10, NULL, NULL, NULL, '2025-12-06 01:55:10.405328+07', '2025-12-06 01:55:10.405314+07', NULL);
+INSERT INTO public."Trips" VALUES ('fc6bd8aa-abf8-4d2d-bc67-b05d304030fa', 'df790517-7517-4172-aeb1-af0de8d1acf3', NULL, NULL, false, 'Hành Trình Xuyên Rừng Cúc Phương', 'Mien Dong Bus Station', '106.71093990000001', '10.8158355', 'Cuc Phuong National Park', '105.6083125', '20.3166875', '“Hành Trình Xuyên Rừng Cúc Phương” dành cho ai yêu thiên nhiên đúng nghĩa. Rời Sài Gòn trong ánh đèn vàng còn leo lét, để rồi lạc vào màu xanh bạt ngàn của rừng quốc gia cổ nhất Việt Nam, nơi mỗi tiếng chim và tiếng gió đều như lời kể của thiên nhiên ngàn tuổi.', 'Draft', 2, 10, NULL, NULL, NULL, '2025-12-06 01:56:12.769903+07', '2025-12-06 01:56:12.769882+07', NULL);
+INSERT INTO public."Trips" VALUES ('81faae2f-63ed-4c8b-85b3-740bf729d4a5', 'df790517-7517-4172-aeb1-af0de8d1acf3', NULL, NULL, false, 'Hành Trình Về Nguồn Đất Tổ', 'Ho Chi Minh City', '106.62966379999999', '10.8230989', 'Đền Hùng - Di Tích Cội Nguồn Dân Tộc Việt Nam', '105.3255046', '21.3684539', '“Hành Trình Về Nguồn Đất Tổ” là khoảnh khắc để chúng ta quay lại nơi cội nguồn dân tộc. Trong không khí linh thiêng, chúng ta nhớ rằng tuổi trẻ không chỉ đi để vui — mà đi để hiểu, để biết mình thuộc về đâu.', 'Draft', 3, 10, NULL, NULL, NULL, '2025-12-06 01:57:12.710035+07', '2025-12-06 01:57:12.710032+07', NULL);
+INSERT INTO public."Trips" VALUES ('e7849579-130f-4fda-83f1-12c36f423fe0', 'df790517-7517-4172-aeb1-af0de8d1acf3', NULL, NULL, false, 'Hành Trình Truy Tìm Bình Yên Phan Thiết-Mũi Né', 'Mien Dong Bus Station', '106.71093990000001', '10.8158355', 'Mũi Né', '108.2871626', '10.933375', '“Hành Trình Truy Tìm Bình Yên Phan Thiết” là chuyến đi cho những ai muốn nhìn hoàng hôn buông xuống trên đồi cát đỏ rực, nghe tiếng gió hoang hoải thổi qua những hàng dừa. Chuyến xe khởi hành sớm mang theo khát vọng khám phá miền biển đầy nắng và đầy gió.', 'Draft', 2, 6, NULL, NULL, NULL, '2025-12-06 01:46:08.407295+07', '2025-12-06 01:46:08.407279+07', NULL);
+INSERT INTO public."Trips" VALUES ('86d98cca-5c49-4e8c-98db-9fb0dd04d8d6', '73098bfc-daf7-415b-b69e-57b460c0bd9b', NULL, NULL, false, 'Đêm Trăng Trên Hồ Ba Bể', 'Bến xe Mỹ Đình', '105.77734249999999', '21.028488199999998', 'Ba Be Lake View Homestay', '105.63705949999999', '22.388584899999998', 'Một đêm bên hồ lớn nhất Việt Nam, khi trăng soi mặt nước như tấm gương khổng lồ. Kayaking trong màn đêm, nghe tiếng côn trùng và hương rừng là trải nghiệm mang tính trị liệu hiếm có.', 'Draft', 8, 16, NULL, NULL, NULL, '2025-12-06 03:09:10.280438+07', '2025-12-06 03:09:10.280435+07', NULL);
+INSERT INTO public."Trips" VALUES ('f73cf959-eea3-4eef-adf9-217d71e48172', '73098bfc-daf7-415b-b69e-57b460c0bd9b', NULL, NULL, false, 'Vi Vu Hà Giang – Đỉnh Thử Thách Mã Pí Lèng', 'Bến xe Mỹ Đình', '105.77734249999999', '21.028488199999998', 'Mã Pí Lèng', '105.42438039999999', '23.2356473', 'Hà Giang là câu chuyện của những vách đá, mây ngang tầm mắt và cảm giác đứng giữa trời đất bao la. Mã Pí Lèng là thử thách không chỉ của tay lái mà còn là của tinh thần.', 'Draft', 8, 16, NULL, NULL, NULL, '2025-12-06 03:10:25.353123+07', '2025-12-06 03:10:25.353109+07', NULL);
+INSERT INTO public."Trips" VALUES ('74a7727b-d256-46aa-8e3b-c04f05b16809', '73098bfc-daf7-415b-b69e-57b460c0bd9b', NULL, NULL, false, 'Tam Đảo Săn Mây – Ngày Không Công Nghệ', 'Bến xe Mỹ Đình', '105.77734249999999', '21.028488199999998', 'Tam đảo Vĩnh Phúc Việt Nam', '105.6441852', '21.453230200000004', 'Ngồi ở quán cà phê cao nhất, mây trôi ngang mắt, không cần filter vẫn đẹp. Một ngày bỏ xa mạng xã hội, để cơ thể reset và đầu óc thảnh thơi.', 'Draft', 8, 16, NULL, NULL, NULL, '2025-12-06 03:11:47.828879+07', '2025-12-06 03:11:47.828863+07', NULL);
+INSERT INTO public."Trips" VALUES ('816be859-1d7c-41e7-bf2a-08d7cb23e838', '73098bfc-daf7-415b-b69e-57b460c0bd9b', NULL, NULL, false, 'Yên Tử – Đường Thiền Trong Sương', 'Bến xe Mỹ Đình', '105.77734249999999', '21.028488199999998', 'Yen Tu Mountain', '106.71501429999999', '21.160921', 'Leo qua những bậc đá cổ, đi trong rừng trúc và sương mù huyền ảo. Một chuyến đi chữa lành, nhìn lại bản thân, để hiểu vì sao có người gọi Yên Tử là “đường lên trời”.', 'Draft', 8, 16, NULL, NULL, NULL, '2025-12-06 03:13:55.172128+07', '2025-12-06 03:13:55.172109+07', NULL);
+INSERT INTO public."Trips" VALUES ('c0f3877d-b20a-447a-9b80-8331eb5ed674', '73098bfc-daf7-415b-b69e-57b460c0bd9b', NULL, NULL, false, 'Cửa Lò – Biển Ăn Niềm Vui', 'Bến xe Mỹ Đình', '105.77734249999999', '21.028488199999998', 'Cua Lo Beach', '105.7486874', '18.7784704', 'Biển xanh, đồ ăn ngập bàn và trò chơi bãi biển. Đây là hành trình xã stress đúng nghĩa “ăn cười no bụng”.', 'Draft', 8, 20, NULL, NULL, NULL, '2025-12-06 03:15:27.087467+07', '2025-12-06 03:15:27.08746+07', NULL);
+INSERT INTO public."Trips" VALUES ('398b7598-f31c-431b-86e7-0a07e8976434', 'df790517-7517-4172-aeb1-af0de8d1acf3', NULL, NULL, false, 'Hành Trình Sống Chậm Hội An', 'Mien Dong Bus Station', NULL, NULL, 'Hoi An ancient town', NULL, NULL, '“Hành Trình Sống Chậm Hội An” là lời mời dành cho những ai đã quá mệt với nhịp sống ồn ã. Đèn lồng, mái ngói rêu phong, phố cổ yên bình — chuyến đi sẽ giúp tâm trí được thảnh thơi, để những câu chuyện cũ có thời gian kể lại.', 'Draft', 2, 6, NULL, NULL, NULL, '2025-12-06 01:52:23.769491+07', '2025-12-06 01:52:23.769474+07', NULL);
+INSERT INTO public."Trips" VALUES ('cda6430f-2033-4359-9aad-9fd19c075006', 'df790517-7517-4172-aeb1-af0de8d1acf3', NULL, NULL, false, 'Hành Trình Huyền Ảo Đảo Ngọc Phú Quốc', 'Ho Chi Minh City', NULL, NULL, 'Phú Quốc International Airport', NULL, NULL, '“Hành Trình Huyền Ảo Đảo Ngọc” đưa chúng ta rời Sài Gòn khi trời tối, để bình minh mở ra trên mặt biển mênh mông. Đắm mình trong nước xanh, ngắm san hô, thưởng hải sản… Mỗi khoảnh khắc đều như một món quà của tự nhiên.', 'Draft', 3, 10, NULL, NULL, NULL, '2025-12-06 01:53:21.823859+07', '2025-12-06 01:53:21.823849+07', NULL);
+INSERT INTO public."Trips" VALUES ('07384e47-2d07-4bfa-9aaa-d65b31762794', 'df790517-7517-4172-aeb1-af0de8d1acf3', NULL, NULL, false, 'Hành Trình Biển Gọi Vũng Tàu', 'Mien Dong Bus Station', '106.71093990000001', '10.8158355', 'Vũng Tàu', '107.136224', '10.4113797', '“Hành Trình Biển Gọi Vũng Tàu” dành cho những người trẻ yêu biển, muốn rũ bỏ hơi nóng ngột ngạt của Sài Gòn để đón làn gió mặn và tiếng sóng vỗ rì rầm. Chúng ta rời phố thị lúc trời còn mờ sương, mong chờ buổi sáng dạo biển, nô đùa dưới nắng và tìm chút bình yên giữa tiếng sóng và cát mềm dưới chân.', 'Published', 2, 5, NULL, NULL, NULL, '2025-12-06 01:33:12.173991+07', '2025-12-06 01:33:12.173696+07', NULL);
+INSERT INTO public."Trips" VALUES ('09d1dac4-b35b-4cf1-9469-ea020385b9f3', '73098bfc-daf7-415b-b69e-57b460c0bd9b', NULL, NULL, false, 'Lúa Chín Mù Cang Chải', 'Bến xe Mỹ Đình', '105.77734249999999', '21.028488199999998', 'Mù Cang Chải District', '104.14660459999999', '21.7670046', 'Hành trình đi giữa những bậc thang vàng óng mùa lúa chín, không khí trong trẻo, cảm giác như đi vào bức tranh sơn mài của thiên nhiên. Đây là chuyến đi để sống chậm, để những shot flycam kể câu chuyện thay lời nói.', 'Published', 8, 20, NULL, NULL, NULL, '2025-12-06 03:07:19.84867+07', '2025-12-06 03:07:19.84866+07', NULL);
+INSERT INTO public."Trips" VALUES ('553df8da-697a-49fb-a4de-41bd74d512d3', '73098bfc-daf7-415b-b69e-57b460c0bd9b', NULL, NULL, false, 'Tràng An – Miền Sơn Thuỷ Huyền Ảo', 'Bến xe Mỹ Đình', '105.77734249999999', '21.028488199999998', 'Tràng An', '105.9624837', '20.2633513', 'Thuyền trôi giữa núi đá vôi hàng triệu năm, hang xuyên nước và tiếng mái chèo nhẹ. Một cuốn phim fantasy Việt Nam, chỉ là bạn đang ngồi bên trong nó.', 'Draft', 8, 20, NULL, NULL, NULL, '2025-12-06 03:18:21.115988+07', '2025-12-06 03:18:21.115982+07', NULL);
+INSERT INTO public."Trips" VALUES ('1776f71c-d5f0-4dbf-a25c-976880a1f583', 'df790517-7517-4172-aeb1-af0de8d1acf3', NULL, NULL, false, 'Hành Trình Cao Nguyên Gió Buôn Ma Thuột', 'Ho Chi Minh City', NULL, NULL, 'Buon Ma Thuot', NULL, NULL, '“Hành Trình Cao Nguyên Gió” dành cho những tâm hồn thích sự hoang sơ của núi rừng. Chúng ta rời Sài Gòn trong bóng tối, để đón ánh nắng đầu tiên trên những nương cà phê bạt ngàn, thưởng vị cà phê nguyên bản giữa đại ngàn và nghe tiếng suối rì rào như một bản nhạc của tự nhiên.', 'Draft', 2, 6, NULL, NULL, NULL, '2025-12-06 01:50:39.689041+07', '2025-12-06 01:50:39.689035+07', NULL);
+INSERT INTO public."Trips" VALUES ('091f871c-f4f8-4009-8fdf-584a6e31d414', 'df790517-7517-4172-aeb1-af0de8d1acf3', NULL, NULL, false, 'Hành Trình Chạm Tới Cực Nam – Cà Mau', 'Mien Dong Bus Station', '106.71093990000001', '10.8158355', 'Cà Mau', '105.1960795', '9.1526728', '“Hành Trình Chạm Tới Cực Nam” là chuyến đi để khám phá nơi tận cùng Tổ quốc. Khởi hành khi thành phố còn say ngủ, chúng ta đi tìm cảm giác nhìn về biển lớn – nơi đất trời như hòa làm một.', 'Published', 4, 12, NULL, NULL, NULL, '2025-12-06 01:57:44.397902+07', '2025-12-06 01:57:44.397897+07', NULL);
+INSERT INTO public."Trips" VALUES ('097b6315-9e60-46c4-a696-82e6b9f33aa1', 'df790517-7517-4172-aeb1-af0de8d1acf3', NULL, NULL, false, 'Hành Trình Dọc Miền Cát Trắng Bình Thuận', 'Ho Chi Minh City', NULL, NULL, 'Beach Co Thach', NULL, NULL, '“Hành Trình Dọc Miền Cát Trắng” là chuỗi trải nghiệm nơi biển ôm lấy sa mạc, nơi nắng trải dài vô tận. Những bãi đá bảy màu và tiếng sóng vỗ không ngừng sẽ tạo nên một câu chuyện độc đáo của tuổi trẻ.', 'Published', 3, 10, NULL, NULL, NULL, '2025-12-06 01:54:18.068661+07', '2025-12-06 01:54:18.068654+07', NULL);
+
+
+--
+-- TOC entry 3537 (class 0 OID 19706)
+-- Dependencies: 221
+-- Data for Name: TripSegments; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+INSERT INTO public."TripSegments" VALUES ('08388ed7-e394-4824-ab5d-9f8f9d0a4e52', '07384e47-2d07-4bfa-9aaa-d65b31762794', 'Mien Dong Bus Station', '106.71093990000001', '10.8158355', 'BÁNH CANH LONG HƯƠNG - Cổng chào thành phố Bà Rịa', '107.15829889999999', '10.4998214', NULL, NULL, 1, 'Xe khách', NULL, NULL, NULL, '2025-12-06 03:37:39.01942+07', '2025-12-06 03:37:39.01942+07', NULL);
+INSERT INTO public."TripSegments" VALUES ('2e6a750c-1cdb-40b4-904b-d76deffb8241', '07384e47-2d07-4bfa-9aaa-d65b31762794', 'BÁNH CANH LONG HƯƠNG - Cổng chào thành phố Bà Rịa', '107.15829889999999', '10.4998214', 'Ba Ria', '107.1816257', '10.508928', NULL, NULL, 2, 'Xe khách', NULL, NULL, NULL, '2025-12-06 03:40:00.741075+07', '2025-12-06 03:40:00.741075+07', NULL);
+INSERT INTO public."TripSegments" VALUES ('a6ffbf63-6c52-4db7-a9fb-db360a55a420', '07384e47-2d07-4bfa-9aaa-d65b31762794', 'Ba Ria', '107.1816257', '10.508928', 'Vũng Tàu', '107.136224', '10.4113797', NULL, NULL, 3, 'Xe khách', NULL, NULL, NULL, '2025-12-06 03:42:03.280252+07', '2025-12-06 03:42:03.280252+07', NULL);
+INSERT INTO public."TripSegments" VALUES ('16ca2709-9631-4f78-91f4-a76d21c70ef4', '091f871c-f4f8-4009-8fdf-584a6e31d414', 'Mien Dong Bus Station', '106.71093990000001', '10.8158355', 'Cà Mau', '105.1960795', '9.1526728', NULL, NULL, 1, 'Xe khách', NULL, NULL, NULL, '2025-12-06 03:47:59.60409+07', '2025-12-06 03:47:59.60409+07', NULL);
+INSERT INTO public."TripSegments" VALUES ('ac10e114-c9bf-4879-bac7-8d0666192af4', '097b6315-9e60-46c4-a696-82e6b9f33aa1', 'Ho Chi Minh City', '106.62966379999999', '10.8230989', 'Phan Thiet', '108.10409', '10.9300676', NULL, NULL, 1, 'Xe khách', NULL, NULL, NULL, '2025-12-06 03:53:23.707531+07', '2025-12-06 03:53:23.707531+07', NULL);
+INSERT INTO public."TripSegments" VALUES ('bd27cba0-8a41-4129-a212-7524384b62e7', '097b6315-9e60-46c4-a696-82e6b9f33aa1', 'Phan Thiet', '108.10409', '10.9300676', 'Bau Trang', '108.4231538', '11.063895', NULL, NULL, 2, 'Xe khách', NULL, NULL, NULL, '2025-12-06 03:55:31.722388+07', '2025-12-06 03:55:31.722388+07', NULL);
+INSERT INTO public."TripSegments" VALUES ('0006f098-5b05-4880-967b-fd38faccf600', '097b6315-9e60-46c4-a696-82e6b9f33aa1', 'Bau Trang', '108.4231538', '11.063895', 'Beach Co Thach', '108.7139597', '11.1766612', NULL, NULL, 3, 'Xe khach', NULL, NULL, NULL, '2025-12-06 04:01:10.687654+07', '2025-12-06 04:01:10.687654+07', NULL);
+INSERT INTO public."TripSegments" VALUES ('e7d61318-6042-4470-93a4-b290e3d97a11', '1776f71c-d5f0-4dbf-a25c-976880a1f583', 'Ho Chi Minh City', '106.62966379999999', '10.8230989', 'Buon Ma Thuot', '108.0382475', '12.6661944', NULL, NULL, 1, 'Xe khách', NULL, NULL, NULL, '2025-12-06 04:21:38.527661+07', '2025-12-06 04:21:38.527661+07', NULL);
+INSERT INTO public."TripSegments" VALUES ('df4d2492-6bf6-4769-8b5a-0b797cb75124', '398b7598-f31c-431b-86e7-0a07e8976434', 'Ho Chi Minh City', '106.62966379999999', '10.8230989', 'Da Nang', '108.0717219', '16.0544563', NULL, NULL, 1, 'Xe khách', NULL, NULL, NULL, '2025-12-06 04:25:30.841816+07', '2025-12-06 04:25:30.841816+07', NULL);
+INSERT INTO public."TripSegments" VALUES ('2e1cf101-9e69-4839-bc85-737738e34913', '398b7598-f31c-431b-86e7-0a07e8976434', 'Da Nang', '108.0717219', '16.0544563', 'Hoi An ancient town', '108.32648209999999', '15.8765952', NULL, NULL, 2, '', NULL, NULL, NULL, '2025-12-06 04:26:45.912987+07', '2025-12-06 04:26:45.912987+07', NULL);
+INSERT INTO public."TripSegments" VALUES ('99a2062a-26d8-4b7e-9826-af9c117ea2c0', 'cda6430f-2033-4359-9aad-9fd19c075006', 'Tan Son Nhat International Airport', '106.6565808', '10.8169828', 'Phú Quốc International Airport', '103.99801319999999', '10.1628226', NULL, NULL, 1, 'Máy bay', NULL, NULL, NULL, '2025-12-06 04:32:25.504508+07', '2025-12-06 04:32:25.504508+07', NULL);
+INSERT INTO public."TripSegments" VALUES ('e00c8400-d4ab-4b73-8d3c-a01220f59950', 'cda6430f-2033-4359-9aad-9fd19c075006', 'Phú Quốc International Airport', '103.99801319999999', '10.1628226', 'Phú Quốc', '103.98402', '10.289878999999999', NULL, NULL, 2, 'Xe khách', NULL, NULL, NULL, '2025-12-06 04:33:33.032954+07', '2025-12-06 04:33:33.032954+07', NULL);
+INSERT INTO public."TripSegments" VALUES ('0ebc7a86-5a20-4e13-ba4f-6cdc230ba239', '09d1dac4-b35b-4cf1-9469-ea020385b9f3', 'Bến xe Mỹ Đình', '105.77734249999999', '21.028488199999998', 'Suối Giàng', '104.6004911', '21.622185299999998', NULL, NULL, 1, 'Xe khách', NULL, NULL, NULL, '2025-12-06 05:01:28.864465+07', '2025-12-06 05:01:28.864465+07', NULL);
+INSERT INTO public."TripSegments" VALUES ('218d2157-898b-4d45-b62e-a5878e1865e6', '09d1dac4-b35b-4cf1-9469-ea020385b9f3', 'Suối Giàng', '104.6004911', '21.622185299999998', 'Tú Lệ', '104.30355949999999', '21.782442099999997', NULL, NULL, 2, 'Xe khách', NULL, NULL, NULL, '2025-12-06 05:03:08.295155+07', '2025-12-06 05:03:08.295155+07', NULL);
+INSERT INTO public."TripSegments" VALUES ('e8aea2ea-be52-4d9b-b80f-c545166affaa', '09d1dac4-b35b-4cf1-9469-ea020385b9f3', 'Tú Lệ', '104.30355949999999', '21.782442099999997', 'Khau Phạ Pass', '104.271667', '21.775000000000002', NULL, NULL, 3, 'Xe khách', NULL, NULL, NULL, '2025-12-06 05:04:35.462604+07', '2025-12-06 05:04:35.462604+07', NULL);
+
+
+--
+-- TOC entry 3543 (class 0 OID 19788)
+-- Dependencies: 227
+-- Data for Name: SegmentPOIs; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+INSERT INTO public."SegmentPOIs" VALUES ('ac672ac8-e8c3-48f9-85fe-65d546b2a4c0', '08388ed7-e394-4824-ab5d-9f8f9d0a4e52', 'BÁNH CANH LONG HƯƠNG - Cổng chào thành phố Bà Rịa', '107.15829889999999', '10.4998214', 1, NULL, NULL, NULL, '2025-12-06 03:38:09.123286+07', '2025-12-06 03:38:09.123286+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('ef3415ff-1ad1-40dc-abb0-6a7f74a3c2c3', '2e6a750c-1cdb-40b4-904b-d76deffb8241', 'Ba Ria Green Stone Lake', '107.14722409999999', '10.5086427', 1, NULL, NULL, NULL, '2025-12-06 03:40:24.984745+07', '2025-12-06 03:40:24.984745+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('23dde10a-cd5b-4781-bcb0-608d8efc656d', '2e6a750c-1cdb-40b4-904b-d76deffb8241', 'Núi Dinh', '107.1366365', '10.5368183', 2, NULL, NULL, NULL, '2025-12-06 03:40:43.620896+07', '2025-12-06 03:40:43.620896+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('ac9368a6-0618-4154-9311-f61dec6c364a', 'a6ffbf63-6c52-4db7-a9fb-db360a55a420', 'Vung Tau Lighthouse', '107.077663', '10.334090999999999', 1, NULL, NULL, NULL, '2025-12-06 03:42:23.95265+07', '2025-12-06 03:42:23.95265+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('fff9fc44-9c4a-45b9-8f72-9f31903763c1', 'a6ffbf63-6c52-4db7-a9fb-db360a55a420', 'Mui Nghinh Phong', '107.0836111', '10.3219444', 2, NULL, NULL, NULL, '2025-12-06 03:42:38.360693+07', '2025-12-06 03:42:38.360693+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('5714cd32-e9b2-4d92-9892-dcfbd7e397f1', 'a6ffbf63-6c52-4db7-a9fb-db360a55a420', 'Chợ hải sản vũng tàu', '107.07583', '10.341133', 3, NULL, NULL, NULL, '2025-12-06 03:43:01.068041+07', '2025-12-06 03:43:01.068041+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('8687b39e-4bcc-4d18-8bdb-e43b24387dec', '16ca2709-9631-4f78-91f4-a76d21c70ef4', 'Năm Căn', '104.9941266', '8.759819499999999', 1, NULL, NULL, NULL, '2025-12-06 03:48:45.687656+07', '2025-12-06 03:48:45.687656+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('73d62293-c992-4805-bed9-23af891a0fb9', '16ca2709-9631-4f78-91f4-a76d21c70ef4', 'Đất Mũi', '104.7557824', '8.6006349', 2, NULL, NULL, NULL, '2025-12-06 03:49:37.780194+07', '2025-12-06 03:49:37.780194+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('b4298fa5-edbb-4741-b196-bb4fa50f0152', '16ca2709-9631-4f78-91f4-a76d21c70ef4', 'Đền thờ Lạc Long Quân', '104.7184721', '8.6054888', 3, NULL, NULL, NULL, '2025-12-06 03:50:42.31098+07', '2025-12-06 03:50:42.31098+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('3747266a-9bf8-4391-a6c5-4d681e5c30f8', 'ac10e114-c9bf-4879-bac7-8d0666192af4', 'Kê Gà Cape', '107.9929762', '10.6994252', 1, NULL, NULL, NULL, '2025-12-06 03:53:33.614124+07', '2025-12-06 03:53:33.614124+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('5299b207-fe09-4156-ad7e-a619731a38c1', 'ac10e114-c9bf-4879-bac7-8d0666192af4', 'Mr. Dia rock', '108.1843512', '10.936725899999999', 2, NULL, NULL, NULL, '2025-12-06 03:54:14.501494+07', '2025-12-06 03:54:14.501494+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('c2db8948-e5f0-4b8c-9ece-ce1a59456718', 'ac10e114-c9bf-4879-bac7-8d0666192af4', 'Lâu đài rượu vang RD Phan Thiết - Mũi Né', '108.18199720000001', '10.9474643', 3, NULL, NULL, NULL, '2025-12-06 03:54:47.079834+07', '2025-12-06 03:54:47.079834+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('b9848e35-c074-42dd-bc80-68132299c703', 'bd27cba0-8a41-4129-a212-7524384b62e7', 'Đồi cát Du lịch Hòa Thắng', '108.4276532', '11.070941999999999', 1, NULL, NULL, NULL, '2025-12-06 03:56:53.520561+07', '2025-12-06 03:56:53.520561+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('8d2e3022-8796-45d9-b7cc-9299bddcc9d3', 'bd27cba0-8a41-4129-a212-7524384b62e7', 'Mui Ne Fishing Village', '108.27912669999999', '10.9410098', 2, NULL, NULL, NULL, '2025-12-06 03:57:38.425718+07', '2025-12-06 03:57:38.425718+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('7debaad5-28ff-4bdb-abaa-8632e1974b23', '0006f098-5b05-4880-967b-fd38faccf600', 'Co Thach Pagoda', '108.7173273', '11.1799254', 1, NULL, NULL, NULL, '2025-12-06 04:01:30.449061+07', '2025-12-06 04:01:30.449061+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('d88adf97-4498-4448-b711-7116f94c49a3', '0006f098-5b05-4880-967b-fd38faccf600', 'Beach Co Thach', '108.7139597', '11.1766612', 2, NULL, NULL, NULL, '2025-12-06 04:01:54.325945+07', '2025-12-06 04:01:54.325945+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('862f7cfa-9fd4-46c4-8be9-ab0a3aa02a79', 'e7d61318-6042-4470-93a4-b290e3d97a11', 'Buôn Đôn District', '107.71624999999999', '12.8791607', 1, NULL, NULL, NULL, '2025-12-06 04:21:50.558222+07', '2025-12-06 04:21:50.558222+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('a598d693-a505-4dce-8035-2d7de7237251', 'e7d61318-6042-4470-93a4-b290e3d97a11', 'Đray Nur Waterfall', '107.89056479999999', '12.5414316', 2, NULL, NULL, NULL, '2025-12-06 04:22:07.705506+07', '2025-12-06 04:22:07.705506+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('342f23f7-f7f6-4965-9558-1069059802e6', 'e7d61318-6042-4470-93a4-b290e3d97a11', 'Ako Dhong Rhade Village', '108.04714919999999', '12.6969713', 3, NULL, NULL, NULL, '2025-12-06 04:22:31.165076+07', '2025-12-06 04:22:31.165076+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('3ae95e96-29e6-4d6a-bafa-4c64f25d7e17', 'df4d2492-6bf6-4769-8b5a-0b797cb75124', 'Cầu Rồng', '108.2295715', '16.061161', 1, NULL, NULL, NULL, '2025-12-06 04:25:43.885503+07', '2025-12-06 04:25:43.885503+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('78c4883d-bb5a-4d05-a717-c9933951be05', 'df4d2492-6bf6-4769-8b5a-0b797cb75124', 'Han Market', '108.2242217', '16.0681959', 2, NULL, NULL, NULL, '2025-12-06 04:26:06.108815+07', '2025-12-06 04:26:06.108815+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('c819f7ac-3d52-4b72-90b5-16d66288904e', '2e1cf101-9e69-4839-bc85-737738e34913', 'Hội An Night Market', '108.3260184', '15.875969300000001', 1, NULL, NULL, NULL, '2025-12-06 04:27:09.144685+07', '2025-12-06 04:27:09.144685+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('62577a9e-ab3f-408f-8560-d77dd8d431e4', '2e1cf101-9e69-4839-bc85-737738e34913', 'Hoi An Historic Hotel', '108.33075070000001', '15.880489999999998', 2, NULL, NULL, NULL, '2025-12-06 04:27:21.432666+07', '2025-12-06 04:27:21.432666+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('4c2b75a7-78d3-404d-ac34-6be27a45dc1e', 'e00c8400-d4ab-4b73-8d3c-a01220f59950', 'Phu Quoc Prison History Museum', '104.0180085', '10.0443585', 1, NULL, NULL, NULL, '2025-12-06 04:34:03.316522+07', '2025-12-06 04:34:03.316522+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('06b9c5af-d23b-4646-bc68-dbda469047cf', 'e00c8400-d4ab-4b73-8d3c-a01220f59950', 'mũi Ông Đội', '104.0471443', '10.0105512', 2, NULL, NULL, NULL, '2025-12-06 04:34:47.589479+07', '2025-12-06 04:34:47.589479+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('12de3cd0-51de-4a94-a301-ed06b0b90b44', 'e00c8400-d4ab-4b73-8d3c-a01220f59950', 'VinWonders Phú Quốc', '103.8540474', '10.3407345', 3, NULL, NULL, NULL, '2025-12-06 04:35:06.924395+07', '2025-12-06 04:35:06.924395+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('633b6bfc-c4a4-4104-9055-4e073ba6c8b6', 'e00c8400-d4ab-4b73-8d3c-a01220f59950', 'Vinpearl Safari Phú Quốc', '103.8914475', '10.3370427', 4, NULL, NULL, NULL, '2025-12-06 04:35:17.08705+07', '2025-12-06 04:35:17.08705+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('36bdfbbe-3a57-4334-a5dd-8454cc431ed1', '0ebc7a86-5a20-4e13-ba4f-6cdc230ba239', 'Suối Giàng - Homestay Phố Núi', '104.58579669999999', '21.6029354', 1, NULL, NULL, NULL, '2025-12-06 05:02:20.771079+07', '2025-12-06 05:02:20.771079+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('4503f6fd-9885-4b9c-8e96-ceb828576245', '218d2157-898b-4d45-b62e-a5878e1865e6', 'Suối khoáng nóng Xuân Vận', '104.3084385', '21.7889019', 1, NULL, NULL, NULL, '2025-12-06 05:04:04.751641+07', '2025-12-06 05:04:04.751641+07', NULL);
+INSERT INTO public."SegmentPOIs" VALUES ('bf3f30db-f5fe-4092-8887-c40268f26026', 'e8aea2ea-be52-4d9b-b80f-c545166affaa', 'Khau Phạ Pass', '104.271667', '21.775000000000002', 1, NULL, NULL, NULL, '2025-12-06 05:04:57.323022+07', '2025-12-06 05:04:57.323022+07', NULL);
+
+
+--
+-- TOC entry 3544 (class 0 OID 19800)
+-- Dependencies: 228
+-- Data for Name: POIActivities; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+INSERT INTO public."POIActivities" VALUES ('53462943-82f9-4b83-b8ea-2835242a824e', 'ac672ac8-e8c3-48f9-85fe-65d546b2a4c0', 'Trạm dừng chân, Nghỉ giữa chặng + Nạp năng lượng', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 03:38:48.597973+07', '2025-12-06 03:38:48.597973+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('697ffa26-89b7-484e-a642-6c4bd6ae7079', 'ef3415ff-1ad1-40dc-abb0-6a7f74a3c2c3', 'Chụp ảnh concept', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 03:41:23.344864+07', '2025-12-06 03:41:23.344864+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('2af3545b-29f6-4c6f-b374-8413ec677414', '23dde10a-cd5b-4781-bcb0-608d8efc656d', 'Trekking 2km', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 03:41:32.140751+07', '2025-12-06 03:41:32.140751+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('13b1b30a-0841-4ddf-9452-5e17597d5740', 'fff9fc44-9c4a-45b9-8f72-9f31903763c1', 'Chụp hình', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 03:43:23.484647+07', '2025-12-06 03:43:23.484647+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('030a7eba-ce50-4ada-bded-c8d611823e90', 'fff9fc44-9c4a-45b9-8f72-9f31903763c1', 'Tham quan', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 03:43:27.80085+07', '2025-12-06 03:43:27.80085+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('c8534109-e02b-4fd0-9876-8e373dd81ac9', 'ac9368a6-0618-4154-9311-f61dec6c364a', 'Chụp hình', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 03:43:33.700657+07', '2025-12-06 03:43:33.700657+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('f270cc8c-d926-4493-a0f4-ddcf27bbe829', 'ac9368a6-0618-4154-9311-f61dec6c364a', 'Tham quan', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 03:43:38.240929+07', '2025-12-06 03:43:38.240929+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('3043c4b4-9763-4b00-b616-026a72dae2fc', '5714cd32-e9b2-4d92-9892-dcfbd7e397f1', 'Mua hải sản', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 03:43:44.572224+07', '2025-12-06 03:43:44.572224+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('41a3b108-d51c-447b-b016-2bba5be8a781', '5714cd32-e9b2-4d92-9892-dcfbd7e397f1', 'Khám phá ẩm thực', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 03:44:01.665675+07', '2025-12-06 03:44:01.665675+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('ae5e9e01-f16e-4602-a172-670926342cde', '8687b39e-4bcc-4d18-8bdb-e43b24387dec', 'Tham quan hệ sinh thái rừng ngập mặn.', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 03:51:01.087114+07', '2025-12-06 03:51:01.087114+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('6feaf321-c678-47d3-8931-18e5dba2bddf', '73d62293-c992-4805-bed9-23af891a0fb9', 'Chụp hình lưu niệm cột mốc tọa độ Đất Mũi và cột cờ Tổ Quốc.', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 03:51:08.458848+07', '2025-12-06 03:51:08.458848+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('0fcbc6fa-2fca-47fb-967e-17cd1bf62ec3', 'b4298fa5-edbb-4741-b196-bb4fa50f0152', 'Quý khách cùng viếng đền thờ Lạc Long Quân – tượng Mẹ Âu Cơ', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 03:51:19.134733+07', '2025-12-06 03:51:19.134733+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('66b96381-38d1-41d4-977f-2571930b4407', '3747266a-9bf8-4391-a6c5-4d681e5c30f8', 'Tham quan checkin', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 03:59:44.586504+07', '2025-12-06 03:59:44.586504+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('1ef17d0b-7fbf-4627-8f50-3af5a639438a', '5299b207-fe09-4156-ad7e-a619731a38c1', 'Tham quan checkin', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 03:59:50.295052+07', '2025-12-06 03:59:50.295052+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('d8f1b680-0647-4159-9d46-f1094f8b06f1', 'c2db8948-e5f0-4b8c-9ece-ce1a59456718', 'Tham quan checkin', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 03:59:58.263342+07', '2025-12-06 03:59:58.263342+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('c8f8ab53-2b92-4e5f-a12f-b403920ac0c9', 'b9848e35-c074-42dd-bc80-68132299c703', 'Tham quan check in', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 04:00:05.886138+07', '2025-12-06 04:00:05.886138+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('b5245746-ffcc-4251-b377-8ff46acb3896', '8d2e3022-8796-45d9-b7cc-9299bddcc9d3', 'Khám phá làng chài', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 04:00:20.810687+07', '2025-12-06 04:00:20.810687+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('7ae9d11a-e85a-4610-aa2b-2f970ec920b2', '8d2e3022-8796-45d9-b7cc-9299bddcc9d3', 'Trải nghiệm đánh bắt hải sản từ ngư dân lành nghề', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 04:00:35.538438+07', '2025-12-06 04:00:35.538438+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('a51d8cdd-988b-447a-8740-e12d1bd795cc', '8d2e3022-8796-45d9-b7cc-9299bddcc9d3', 'Lặn biển bắt san hô', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 04:00:50.221064+07', '2025-12-06 04:00:50.221064+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('f469b7bc-f92c-4a7b-b24e-91f0dbe7316a', '7debaad5-28ff-4bdb-abaa-8632e1974b23', 'Tham quan mái chùa cổ kính', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 04:01:45.073182+07', '2025-12-06 04:01:45.073182+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('fb75ba48-34fa-4e76-9316-d4535b5a7b01', 'd88adf97-4498-4448-b711-7116f94c49a3', 'Tắm biển hòa mình vào không khí mát mẻ của Phan Thiết', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 04:02:10.524458+07', '2025-12-06 04:02:10.524458+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('f4a2084d-e293-42cf-8641-c0ea804fdac8', '862f7cfa-9fd4-46c4-8be9-ab0a3aa02a79', 'Cầu gỗ – treo lơ lửng qua sông Sêrêpôk', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 04:23:17.177563+07', '2025-12-06 04:23:17.177563+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('1980a0ba-4d10-4e1b-8299-0a1beaaa636c', '862f7cfa-9fd4-46c4-8be9-ab0a3aa02a79', 'Văn hóa săn bắt và thuần dưỡng voi', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 04:23:28.222418+07', '2025-12-06 04:23:28.222418+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('83ba6880-eb86-4078-9910-c2c80f5498ce', '862f7cfa-9fd4-46c4-8be9-ab0a3aa02a79', 'Nhà dài – văn hóa mẫu hệ', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 04:23:38.310333+07', '2025-12-06 04:23:38.310333+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('3af4dc23-a86e-4e32-9558-b6a013b69dcf', 'a598d693-a505-4dce-8035-2d7de7237251', 'Check-in sau màn nước tung trắng xóa — như bước vào thế giới cổ tích.', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 04:23:59.274273+07', '2025-12-06 04:23:59.274273+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('285cc998-f749-4b14-bd8d-2054d0c13197', '342f23f7-f7f6-4965-9558-1069059802e6', 'Trải nghiệm Nếp thơm nướng bằng ống tre', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 04:24:15.453599+07', '2025-12-06 04:24:15.453599+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('1759a729-3a13-4048-bd5d-c7bb79611511', '3ae95e96-29e6-4d6a-bafa-4c64f25d7e17', 'Ngắm rồng trên cầu phun lửa', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 04:26:15.445539+07', '2025-12-06 04:26:15.445539+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('4cd2da64-0b44-41fb-8ade-a014d381ea9a', '78c4883d-bb5a-4d05-a717-c9933951be05', 'Khám phá đặc sản miền Trung bên trong chợ', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 04:26:28.281592+07', '2025-12-06 04:26:28.281592+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('e12dfbd9-434f-4f4a-b137-dc52f1811b83', 'c819f7ac-3d52-4b72-90b5-16d66288904e', 'Khám phá nét đẹp Hội An phố cổ', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 04:27:54.437594+07', '2025-12-06 04:27:54.437594+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('f0b39f99-0128-425d-9ef8-15b4fb20e9b7', '62577a9e-ab3f-408f-8560-d77dd8d431e4', 'Khám phá lịch sử Hội An', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 04:28:11.622314+07', '2025-12-06 04:28:11.622314+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('96f7f0cb-be95-4251-af92-25cc4b74a92d', '4c2b75a7-78d3-404d-ac34-6be27a45dc1e', 'Tham quan di tích lịch sử nhà tù Phú Quốc', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 04:35:57.123977+07', '2025-12-06 04:35:57.123977+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('3fa5f7c9-b959-468f-8f36-6518b7a0c239', '06b9c5af-d23b-4646-bc68-dbda469047cf', 'Tham quan khu du lịch sinh thái Mũi Ông Đội', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 04:36:30.971058+07', '2025-12-06 04:36:30.971058+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('c1c29600-b07b-46e4-b845-ea955a397e49', '12de3cd0-51de-4a94-a301-ed06b0b90b44', 'Chơi trò chơi ở khu vui chơi Vinwonders', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 04:36:52.784163+07', '2025-12-06 04:36:52.784163+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('11198048-f2c9-467c-b619-8332a5178a15', '633b6bfc-c4a4-4104-9055-4e073ba6c8b6', 'Khám phá sự đa dạng của các loài động vật trong vườn thú Safari', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 04:37:17.279506+07', '2025-12-06 04:37:17.279506+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('f41dbebc-0811-45c7-b2d0-7f8f6aa277bb', '36bdfbbe-3a57-4334-a5dd-8454cc431ed1', 'Dừng chân nghĩ ngơi nhận phòng', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 05:02:28.635519+07', '2025-12-06 05:02:28.635519+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('5adce224-d352-4c99-a692-e988356a1979', '4503f6fd-9885-4b9c-8e96-ceb828576245', 'Tắm suối nước nóng', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 05:04:17.920746+07', '2025-12-06 05:04:17.920746+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('ff0de9f1-ce25-43fc-994c-2c9ffcbd504a', 'bf3f30db-f5fe-4092-8887-c40268f26026', 'Bay dù lượn', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 05:05:00.23079+07', '2025-12-06 05:05:00.23079+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('0279e6ed-fb59-4b78-bee7-0edebfb5f497', 'bf3f30db-f5fe-4092-8887-c40268f26026', 'Check-in cổng trời', true, 'ff0de9f1-ce25-43fc-994c-2c9ffcbd504a', NULL, NULL, NULL, NULL, '2025-12-06 05:05:09.734673+07', '2025-12-06 05:05:09.734673+07', NULL);
+INSERT INTO public."POIActivities" VALUES ('1a0536d3-0ef5-4e25-bc88-58ca6a7a43ea', 'bf3f30db-f5fe-4092-8887-c40268f26026', 'Bay dù lượn', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 05:05:15.750566+07', '2025-12-06 05:05:15.750566+07', NULL);
+
+
+--
+-- TOC entry 3534 (class 0 OID 19670)
+-- Dependencies: 218
+-- Data for Name: TripDepartures; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+INSERT INTO public."TripDepartures" VALUES ('f0326629-a3ec-4afd-abb0-23c31914d848', '07384e47-2d07-4bfa-9aaa-d65b31762794', '2026-01-01 08:00:00+07', '2026-01-03 20:00:00+07', 'Ready', '2025-12-25 08:00:00+07', '2025-12-29 08:00:00+07', NULL, NULL, NULL, '2025-12-09 00:57:58.93009+07', '2025-12-09 00:57:58.93009+07', NULL, NULL);
+INSERT INTO public."TripDepartures" VALUES ('921b5cb8-34ed-44bc-a6f9-17e808ffafc1', '07384e47-2d07-4bfa-9aaa-d65b31762794', '2026-01-20 08:00:00+07', '2026-01-23 20:00:00+07', 'Ready', '2026-01-13 08:00:00+07', '2026-01-17 08:00:00+07', NULL, NULL, NULL, '2025-12-09 00:59:40.291885+07', '2025-12-09 00:59:40.291885+07', NULL, NULL);
+INSERT INTO public."TripDepartures" VALUES ('cbdd9b86-b857-4e45-a390-8658940ae9f7', '091f871c-f4f8-4009-8fdf-584a6e31d414', '2026-01-06 08:00:00+07', '2026-01-08 20:00:00+07', 'Ready', '2025-12-30 08:00:00+07', '2026-01-03 08:00:00+07', NULL, NULL, NULL, '2025-12-09 01:08:28.851836+07', '2025-12-09 01:08:28.851836+07', NULL, NULL);
+INSERT INTO public."TripDepartures" VALUES ('8cef3d37-7794-4ad6-b176-79d203ab668e', '09d1dac4-b35b-4cf1-9469-ea020385b9f3', '2026-01-01 08:00:00+07', '2026-01-05 20:00:00+07', 'Ready', '2025-12-25 08:00:00+07', '2025-12-29 08:00:00+07', NULL, NULL, NULL, '2025-12-09 01:11:02.320641+07', '2025-12-09 01:11:02.320641+07', NULL, NULL);
+INSERT INTO public."TripDepartures" VALUES ('4bd3608a-9e9d-4d58-b102-b9a4553877e3', '097b6315-9e60-46c4-a696-82e6b9f33aa1', '2026-01-10 08:00:00+07', '2026-01-13 20:00:00+07', 'Ready', '2026-01-03 08:00:00+07', '2026-01-07 08:00:00+07', NULL, NULL, NULL, '2025-12-09 01:58:15.820808+07', '2025-12-09 01:58:15.820808+07', NULL, NULL);
+INSERT INTO public."TripDepartures" VALUES ('b6536c95-04d5-45ab-b4ea-39c9c85a3b79', '097b6315-9e60-46c4-a696-82e6b9f33aa1', '2025-11-20 08:00:00+07', '2025-11-23 20:00:00+07', 'Completed', '2025-11-13 08:00:00+07', '2025-11-17 08:00:00+07', NULL, NULL, NULL, '2025-10-09 01:11:02.32+07', '2025-10-09 01:11:02.32+07', NULL, NULL);
+
+
+--
+-- TOC entry 3545 (class 0 OID 19832)
+-- Dependencies: 229
+-- Data for Name: ActivtyTrackings; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+INSERT INTO public."ActivtyTrackings" VALUES ('01804c1e-b418-4ee0-b89b-61855e845687', 'f0326629-a3ec-4afd-abb0-23c31914d848', '697ffa26-89b7-484e-a642-6c4bd6ae7079', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094481+07', '2025-12-09 00:57:59.094481+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('02500716-c04b-4ead-8b53-dfebedaf2ff2', 'f0326629-a3ec-4afd-abb0-23c31914d848', '13b1b30a-0841-4ddf-9452-5e17597d5740', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094483+07', '2025-12-09 00:57:59.094483+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('66430485-dc33-40ac-828d-8977b81a99c6', 'f0326629-a3ec-4afd-abb0-23c31914d848', '030a7eba-ce50-4ada-bded-c8d611823e90', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094483+07', '2025-12-09 00:57:59.094483+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('75231072-a26d-4a39-aa89-84b456de3b95', 'f0326629-a3ec-4afd-abb0-23c31914d848', 'f270cc8c-d926-4493-a0f4-ddcf27bbe829', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094482+07', '2025-12-09 00:57:59.094482+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('79739a9a-fd43-4827-ae55-3543fdf99c25', 'f0326629-a3ec-4afd-abb0-23c31914d848', '3043c4b4-9763-4b00-b616-026a72dae2fc', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094482+07', '2025-12-09 00:57:59.094482+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('bfa0bd3e-74b1-4c6a-aa5c-e0d114f850b4', 'f0326629-a3ec-4afd-abb0-23c31914d848', '2af3545b-29f6-4c6f-b374-8413ec677414', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094481+07', '2025-12-09 00:57:59.094481+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('cfffff3c-75c2-4c65-8d47-0566018f9ec3', 'f0326629-a3ec-4afd-abb0-23c31914d848', '53462943-82f9-4b83-b8ea-2835242a824e', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.09448+07', '2025-12-09 00:57:59.09448+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('d3d5a0c5-1253-4bd6-b3dd-14ab2c181eb1', 'f0326629-a3ec-4afd-abb0-23c31914d848', 'c8534109-e02b-4fd0-9876-8e373dd81ac9', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094482+07', '2025-12-09 00:57:59.094482+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('f33b6065-cb57-4ed9-8dd7-92486206b260', 'f0326629-a3ec-4afd-abb0-23c31914d848', '41a3b108-d51c-447b-b016-2bba5be8a781', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094482+07', '2025-12-09 00:57:59.094482+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('590e2666-4e67-4ff5-98bc-675dbfffc793', '921b5cb8-34ed-44bc-a6f9-17e808ffafc1', 'c8534109-e02b-4fd0-9876-8e373dd81ac9', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:59:40.461168+07', '2025-12-09 00:59:40.461168+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('6715eb74-6df2-4683-87d8-1c0219fc65d8', '921b5cb8-34ed-44bc-a6f9-17e808ffafc1', 'f270cc8c-d926-4493-a0f4-ddcf27bbe829', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:59:40.461168+07', '2025-12-09 00:59:40.461168+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('68ed30f9-331c-44b1-9c74-821aea18c8b9', '921b5cb8-34ed-44bc-a6f9-17e808ffafc1', '41a3b108-d51c-447b-b016-2bba5be8a781', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:59:40.461167+07', '2025-12-09 00:59:40.461167+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('b3fd12df-3351-4e5b-ad61-68ffd70d265f', '921b5cb8-34ed-44bc-a6f9-17e808ffafc1', '697ffa26-89b7-484e-a642-6c4bd6ae7079', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:59:40.461167+07', '2025-12-09 00:59:40.461167+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('c107a68e-217a-483c-a34d-d14f0c128a26', '921b5cb8-34ed-44bc-a6f9-17e808ffafc1', '3043c4b4-9763-4b00-b616-026a72dae2fc', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:59:40.461168+07', '2025-12-09 00:59:40.461168+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('d45d0dd9-949b-4fe4-a979-a7964d5221d8', '921b5cb8-34ed-44bc-a6f9-17e808ffafc1', '53462943-82f9-4b83-b8ea-2835242a824e', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:59:40.461166+07', '2025-12-09 00:59:40.461166+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('dda9b221-8cb4-42f0-a3f4-06d2df057513', '921b5cb8-34ed-44bc-a6f9-17e808ffafc1', '2af3545b-29f6-4c6f-b374-8413ec677414', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:59:40.461167+07', '2025-12-09 00:59:40.461167+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('e2067a8b-1381-467c-ab43-d6fdb15ab3f8', '921b5cb8-34ed-44bc-a6f9-17e808ffafc1', '13b1b30a-0841-4ddf-9452-5e17597d5740', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:59:40.461168+07', '2025-12-09 00:59:40.461168+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('f8a3d401-22b0-4224-8e28-a685f56304a5', '921b5cb8-34ed-44bc-a6f9-17e808ffafc1', '030a7eba-ce50-4ada-bded-c8d611823e90', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:59:40.461169+07', '2025-12-09 00:59:40.461169+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('25752ff3-d0b1-488b-b4da-811e4b8f9345', 'cbdd9b86-b857-4e45-a390-8658940ae9f7', '6feaf321-c678-47d3-8931-18e5dba2bddf', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:08:29.000904+07', '2025-12-09 01:08:29.000904+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('5d2232d3-9215-46cf-8129-622ddba680bd', 'cbdd9b86-b857-4e45-a390-8658940ae9f7', '0fcbc6fa-2fca-47fb-967e-17cd1bf62ec3', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:08:29.000905+07', '2025-12-09 01:08:29.000905+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('81a3b2e6-b219-4909-a036-f8792cbe2239', 'cbdd9b86-b857-4e45-a390-8658940ae9f7', 'ae5e9e01-f16e-4602-a172-670926342cde', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:08:29.000904+07', '2025-12-09 01:08:29.000904+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('1d133226-cf39-4d13-ad01-a9977b0b1e3b', '8cef3d37-7794-4ad6-b176-79d203ab668e', 'f41dbebc-0811-45c7-b2d0-7f8f6aa277bb', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:11:02.468495+07', '2025-12-09 01:11:02.468495+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('780c3fe8-6704-4a82-abec-8fe97cc91b96', '8cef3d37-7794-4ad6-b176-79d203ab668e', '1a0536d3-0ef5-4e25-bc88-58ca6a7a43ea', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:11:02.468496+07', '2025-12-09 01:11:02.468496+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('a49eb32d-4be1-4a68-a96f-5f85d25168c4', '8cef3d37-7794-4ad6-b176-79d203ab668e', '5adce224-d352-4c99-a692-e988356a1979', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:11:02.468495+07', '2025-12-09 01:11:02.468495+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('df81d236-659e-41f2-b2e1-b5b050b6013d', '8cef3d37-7794-4ad6-b176-79d203ab668e', 'ff0de9f1-ce25-43fc-994c-2c9ffcbd504a', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:11:02.468496+07', '2025-12-09 01:11:02.468496+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('e445cebb-96c3-42f0-8f3f-2a6f56bfef5c', '8cef3d37-7794-4ad6-b176-79d203ab668e', '0279e6ed-fb59-4b78-bee7-0edebfb5f497', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:11:02.468496+07', '2025-12-09 01:11:02.468496+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('2bbf480b-42a0-48eb-8a63-4a9b5ffd7af8', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', 'fb75ba48-34fa-4e76-9316-d4535b5a7b01', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:58:16.010767+07', '2025-12-09 01:58:16.010767+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('667dc630-f862-42df-82e8-bd30c6baf32e', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', 'f469b7bc-f92c-4a7b-b24e-91f0dbe7316a', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:58:16.010766+07', '2025-12-09 01:58:16.010766+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('836152b5-68a8-4ff0-9ee6-97c8ad38aa31', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', '7ae9d11a-e85a-4610-aa2b-2f970ec920b2', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:58:16.010825+07', '2025-12-09 01:58:16.010825+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('9f25f56a-439d-4be4-b22a-35e44dfb6076', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', '66b96381-38d1-41d4-977f-2571930b4407', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:58:16.010767+07', '2025-12-09 01:58:16.010767+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('c4026d4b-4c5c-4111-8842-e62eb42afd55', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', 'd8f1b680-0647-4159-9d46-f1094f8b06f1', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:58:16.010825+07', '2025-12-09 01:58:16.010825+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('e8dbbd49-8f46-4295-9d3c-27026e3a1811', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', 'c8f8ab53-2b92-4e5f-a12f-b403920ac0c9', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:58:16.010825+07', '2025-12-09 01:58:16.010825+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('e9b2b209-5254-4cc4-b2dc-59c7d2edc96b', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', '1ef17d0b-7fbf-4627-8f50-3af5a639438a', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:58:16.010812+07', '2025-12-09 01:58:16.010812+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('f9ab4f9a-d355-42c4-91d1-14e914596ff3', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', 'a51d8cdd-988b-447a-8740-e12d1bd795cc', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:58:16.010825+07', '2025-12-09 01:58:16.010825+07', NULL);
+INSERT INTO public."ActivtyTrackings" VALUES ('fa954df7-99c4-4b8e-8424-5b8721c7e897', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', 'b5245746-ffcc-4251-b377-8ff46acb3896', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:58:16.010825+07', '2025-12-09 01:58:16.010825+07', NULL);
+
+
+--
+-- TOC entry 3535 (class 0 OID 19682)
+-- Dependencies: 219
+-- Data for Name: TripFeedbacks; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+INSERT INTO public."TripFeedbacks" VALUES ('beb2fe2c-f111-42ce-b1f7-829ac5dcaac0', '097b6315-9e60-46c4-a696-82e6b9f33aa1', '8e650d91-38a4-4649-84bf-0118627ae995', 'Chuyến đi đáng nhớ', 5, NULL, NULL, NULL, '2025-12-09 02:14:49.779574+07', '2025-12-09 02:14:49.779574+07', NULL);
+
+
+--
+-- TOC entry 3542 (class 0 OID 19771)
+-- Dependencies: 226
+-- Data for Name: Images; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+INSERT INTO public."Images" VALUES ('e29b9fca-54c8-4498-936e-952a20c326db', '07384e47-2d07-4bfa-9aaa-d65b31762794', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764962747/uploads/vungtau1.jpg', '2025-12-06 02:25:46.8582+07', '2025-12-06 02:25:46.858234+07');
+INSERT INTO public."Images" VALUES ('eb890687-d6bd-4bcd-8fc2-9ecc86943253', '07384e47-2d07-4bfa-9aaa-d65b31762794', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764962755/uploads/vungtau2.jpg', '2025-12-06 02:25:54.512616+07', '2025-12-06 02:25:54.512616+07');
+INSERT INTO public."Images" VALUES ('4fab00ae-99b6-4f10-a881-ad759d2c36f7', '07384e47-2d07-4bfa-9aaa-d65b31762794', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764962761/uploads/vungtau3.jpg', '2025-12-06 02:26:01.248476+07', '2025-12-06 02:26:01.248476+07');
+INSERT INTO public."Images" VALUES ('8edf0020-3018-4104-9e80-f14831d2e80b', '091f871c-f4f8-4009-8fdf-584a6e31d414', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764962819/uploads/camau1.jpg', '2025-12-06 02:26:58.422481+07', '2025-12-06 02:26:58.422481+07');
+INSERT INTO public."Images" VALUES ('daaaddda-ac83-4435-b9ba-afbca3934d2d', '091f871c-f4f8-4009-8fdf-584a6e31d414', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764962825/uploads/camau2.jpg', '2025-12-06 02:27:05.328896+07', '2025-12-06 02:27:05.328896+07');
+INSERT INTO public."Images" VALUES ('de5853c0-673b-44bd-a2a2-c7b5feb63ff8', '091f871c-f4f8-4009-8fdf-584a6e31d414', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764962834/uploads/camau3.jpg', '2025-12-06 02:27:14.478216+07', '2025-12-06 02:27:14.478216+07');
+INSERT INTO public."Images" VALUES ('6440de8d-12ee-422d-be55-2066bb1c4ebd', '097b6315-9e60-46c4-a696-82e6b9f33aa1', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764962847/uploads/cat1.jpg', '2025-12-06 02:27:26.763318+07', '2025-12-06 02:27:26.763319+07');
+INSERT INTO public."Images" VALUES ('22fc84e9-0ec6-42f5-9228-5afbf4bbe633', '097b6315-9e60-46c4-a696-82e6b9f33aa1', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764962852/uploads/cat2.jpg', '2025-12-06 02:27:32.2305+07', '2025-12-06 02:27:32.2305+07');
+INSERT INTO public."Images" VALUES ('927855be-9f14-464b-bacf-dbdc8e341e44', '097b6315-9e60-46c4-a696-82e6b9f33aa1', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764962858/uploads/cat3.jpg', '2025-12-06 02:27:37.498357+07', '2025-12-06 02:27:37.498358+07');
+INSERT INTO public."Images" VALUES ('b12b8e71-7fb1-45e1-aba7-56337bfed9ce', '1776f71c-d5f0-4dbf-a25c-976880a1f583', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963078/uploads/bmt1.jpg', '2025-12-06 02:31:18.22105+07', '2025-12-06 02:31:18.22105+07');
+INSERT INTO public."Images" VALUES ('ef69eed8-9a5e-4fbd-8623-be1b15a2a918', '1776f71c-d5f0-4dbf-a25c-976880a1f583', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963085/uploads/bmt2.jpg', '2025-12-06 02:31:24.498795+07', '2025-12-06 02:31:24.498795+07');
+INSERT INTO public."Images" VALUES ('f84489e6-b0a9-42d0-8f49-9f5c3fe2d53c', '1776f71c-d5f0-4dbf-a25c-976880a1f583', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963090/uploads/bmt3.jpg', '2025-12-06 02:31:30.272351+07', '2025-12-06 02:31:30.272351+07');
+INSERT INTO public."Images" VALUES ('2486d0d0-182a-4b09-9bfb-d37fc842d863', '398b7598-f31c-431b-86e7-0a07e8976434', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963474/uploads/hoian1.jpg', '2025-12-06 02:37:54.220367+07', '2025-12-06 02:37:54.220367+07');
+INSERT INTO public."Images" VALUES ('12ab8cf3-f107-4943-96d2-e1fe862ef987', '398b7598-f31c-431b-86e7-0a07e8976434', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963480/uploads/hoian2.jpg', '2025-12-06 02:38:00.108994+07', '2025-12-06 02:38:00.108994+07');
+INSERT INTO public."Images" VALUES ('1a173d6f-11b8-4960-a76d-ba93b67a31ab', '398b7598-f31c-431b-86e7-0a07e8976434', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963486/uploads/hoian3.jpg', '2025-12-06 02:38:06.145267+07', '2025-12-06 02:38:06.145267+07');
+INSERT INTO public."Images" VALUES ('27fd7690-37dd-4e80-a141-6ea189e4d901', '81faae2f-63ed-4c8b-85b3-740bf729d4a5', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963556/uploads/hung1.jpg', '2025-12-06 02:39:16.267042+07', '2025-12-06 02:39:16.267043+07');
+INSERT INTO public."Images" VALUES ('42eb5610-4320-424f-ba50-2a908aebf0f1', '81faae2f-63ed-4c8b-85b3-740bf729d4a5', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963562/uploads/hung2.jpg', '2025-12-06 02:39:21.578804+07', '2025-12-06 02:39:21.578804+07');
+INSERT INTO public."Images" VALUES ('631feab9-8c90-43e7-806e-6d251601054c', '81faae2f-63ed-4c8b-85b3-740bf729d4a5', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963568/uploads/hung3.jpg', '2025-12-06 02:39:27.423461+07', '2025-12-06 02:39:27.423462+07');
+INSERT INTO public."Images" VALUES ('5e90c7e5-dc34-483b-9880-ca673a76f8f6', 'cda6430f-2033-4359-9aad-9fd19c075006', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963646/uploads/pq1.jpg', '2025-12-06 02:40:46.23978+07', '2025-12-06 02:40:46.23978+07');
+INSERT INTO public."Images" VALUES ('ef87e53c-d690-4b3e-8c2f-b02f8b345eb8', 'cda6430f-2033-4359-9aad-9fd19c075006', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963653/uploads/pq2.jpg', '2025-12-06 02:40:52.43573+07', '2025-12-06 02:40:52.43573+07');
+INSERT INTO public."Images" VALUES ('3b62d88f-2e8f-49fc-a0d6-8a29db49f961', 'cda6430f-2033-4359-9aad-9fd19c075006', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963660/uploads/pq3.jpg', '2025-12-06 02:40:59.362601+07', '2025-12-06 02:40:59.362601+07');
+INSERT INTO public."Images" VALUES ('3aaccf14-cf10-4243-a9cd-4a9dfa9413da', 'd4e79751-9bce-4aff-91f7-7090abc3e330', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963722/uploads/cc1.jpg', '2025-12-06 02:42:01.507606+07', '2025-12-06 02:42:01.507607+07');
+INSERT INTO public."Images" VALUES ('d7b8fa92-ae7a-4e47-bc2c-dd2af390db68', 'd4e79751-9bce-4aff-91f7-7090abc3e330', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963728/uploads/cc2.jpg', '2025-12-06 02:42:07.943885+07', '2025-12-06 02:42:07.943885+07');
+INSERT INTO public."Images" VALUES ('231022bb-7258-4637-ad99-a91416d6b870', 'd4e79751-9bce-4aff-91f7-7090abc3e330', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963733/uploads/cc3.jpg', '2025-12-06 02:42:13.609042+07', '2025-12-06 02:42:13.609042+07');
+INSERT INTO public."Images" VALUES ('b1593d13-33ab-46b4-aebb-061bb60300bc', 'e7849579-130f-4fda-83f1-12c36f423fe0', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963810/uploads/pt1.jpg', '2025-12-06 02:43:30.12639+07', '2025-12-06 02:43:30.12639+07');
+INSERT INTO public."Images" VALUES ('ee07ad78-9832-4aa1-af4b-0f5b7fc72b3a', 'e7849579-130f-4fda-83f1-12c36f423fe0', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963815/uploads/pt2.jpg', '2025-12-06 02:43:35.271167+07', '2025-12-06 02:43:35.271167+07');
+INSERT INTO public."Images" VALUES ('ce98c484-f8d5-4992-a256-b581c7c8efd6', 'e7849579-130f-4fda-83f1-12c36f423fe0', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963821/uploads/pt3.jpg', '2025-12-06 02:43:41.028785+07', '2025-12-06 02:43:41.028785+07');
+INSERT INTO public."Images" VALUES ('e5f14e2a-d368-44df-8059-746a59c6e1e0', 'fc6bd8aa-abf8-4d2d-bc67-b05d304030fa', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963889/uploads/cp3.jpg', '2025-12-06 02:44:48.850849+07', '2025-12-06 02:44:48.850849+07');
+INSERT INTO public."Images" VALUES ('bede5edb-3fcc-4e02-8603-19fbacb0b236', 'fc6bd8aa-abf8-4d2d-bc67-b05d304030fa', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963895/uploads/cp2.jpg', '2025-12-06 02:44:54.41148+07', '2025-12-06 02:44:54.411481+07');
+INSERT INTO public."Images" VALUES ('968332e4-312d-4a19-a410-6df0c3bad5a0', 'fc6bd8aa-abf8-4d2d-bc67-b05d304030fa', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963901/uploads/cp1.jpg', '2025-12-06 02:45:00.450519+07', '2025-12-06 02:45:00.450519+07');
+INSERT INTO public."Images" VALUES ('6b448ad7-98f6-42ef-82fb-c9893f51dc6a', '09d1dac4-b35b-4cf1-9469-ea020385b9f3', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764966282/uploads/mcc1.jpg', '2025-12-06 03:24:42.279221+07', '2025-12-06 03:24:42.279221+07');
+INSERT INTO public."Images" VALUES ('2d7a248b-375a-4997-8a81-fc9c0792c550', '09d1dac4-b35b-4cf1-9469-ea020385b9f3', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764966289/uploads/mcc2.jpg', '2025-12-06 03:24:48.699574+07', '2025-12-06 03:24:48.699574+07');
+INSERT INTO public."Images" VALUES ('95b3772c-e730-4139-a5f2-a1ea98b0345d', '09d1dac4-b35b-4cf1-9469-ea020385b9f3', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764966294/uploads/mcc3.jpg', '2025-12-06 03:24:53.887478+07', '2025-12-06 03:24:53.887478+07');
+INSERT INTO public."Images" VALUES ('ac22c077-130f-47bb-894c-03119c856169', '553df8da-697a-49fb-a4de-41bd74d512d3', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764966308/uploads/ta1.jpg', '2025-12-06 03:25:08.206277+07', '2025-12-06 03:25:08.206278+07');
+INSERT INTO public."Images" VALUES ('bea02436-813c-4335-9318-d25144fcb793', '553df8da-697a-49fb-a4de-41bd74d512d3', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764966314/uploads/ta2.jpg', '2025-12-06 03:25:14.444295+07', '2025-12-06 03:25:14.444295+07');
+INSERT INTO public."Images" VALUES ('a4943a05-b9e8-4520-893b-27d0e8e0b726', '553df8da-697a-49fb-a4de-41bd74d512d3', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764966320/uploads/ta3.jpg', '2025-12-06 03:25:20.123137+07', '2025-12-06 03:25:20.123137+07');
+INSERT INTO public."Images" VALUES ('29c98e09-6032-48e0-8905-2c2037a9eacc', '74a7727b-d256-46aa-8e3b-c04f05b16809', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764966334/uploads/td1.jpg', '2025-12-06 03:25:33.834282+07', '2025-12-06 03:25:33.834282+07');
+INSERT INTO public."Images" VALUES ('e5104f84-4a0a-4333-82c8-4e0520666263', '74a7727b-d256-46aa-8e3b-c04f05b16809', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764966342/uploads/td2.jpg', '2025-12-06 03:25:41.508168+07', '2025-12-06 03:25:41.508168+07');
+INSERT INTO public."Images" VALUES ('5a8a6392-2724-42b7-81c4-6e294b80644e', '74a7727b-d256-46aa-8e3b-c04f05b16809', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764966349/uploads/td3.jpg', '2025-12-06 03:25:48.629026+07', '2025-12-06 03:25:48.629026+07');
+INSERT INTO public."Images" VALUES ('a7d0e8bc-3d3a-4ab4-9127-62348c341a71', '816be859-1d7c-41e7-bf2a-08d7cb23e838', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764966550/uploads/yt1.jpg', '2025-12-06 03:29:09.928877+07', '2025-12-06 03:29:09.928878+07');
+INSERT INTO public."Images" VALUES ('c03e5063-513e-432d-bca4-66be93f74c02', '816be859-1d7c-41e7-bf2a-08d7cb23e838', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764966557/uploads/yt2.jpg', '2025-12-06 03:29:18.382012+07', '2025-12-06 03:29:18.382012+07');
+INSERT INTO public."Images" VALUES ('575528b0-6209-4335-aa8e-47c8d236b0a3', '816be859-1d7c-41e7-bf2a-08d7cb23e838', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764966564/uploads/yt3.jpg', '2025-12-06 03:29:24.153259+07', '2025-12-06 03:29:24.153259+07');
+INSERT INTO public."Images" VALUES ('cdf452e7-e502-4da2-a959-5b07392669ce', '86d98cca-5c49-4e8c-98db-9fb0dd04d8d6', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764966575/uploads/bb1.jpg', '2025-12-06 03:29:34.630928+07', '2025-12-06 03:29:34.630928+07');
+INSERT INTO public."Images" VALUES ('1200e542-5ef4-4f3b-9620-e17ba509b77c', '86d98cca-5c49-4e8c-98db-9fb0dd04d8d6', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764966581/uploads/bb2.jpg', '2025-12-06 03:29:40.833787+07', '2025-12-06 03:29:40.833787+07');
+INSERT INTO public."Images" VALUES ('d51dd5eb-a413-4e95-9f78-7687dd88ba5b', '86d98cca-5c49-4e8c-98db-9fb0dd04d8d6', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764966589/uploads/bb3.jpg', '2025-12-06 03:29:48.912917+07', '2025-12-06 03:29:48.912917+07');
+INSERT INTO public."Images" VALUES ('9775b56d-50d6-4dd2-bde8-d8b7bcab0b7d', 'c0f3877d-b20a-447a-9b80-8331eb5ed674', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764966605/uploads/cl1.jpg', '2025-12-06 03:30:04.86479+07', '2025-12-06 03:30:04.86479+07');
+INSERT INTO public."Images" VALUES ('67874a05-e48b-4ebd-b227-f08c8a85def0', 'c0f3877d-b20a-447a-9b80-8331eb5ed674', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764966611/uploads/cl2.jpg', '2025-12-06 03:30:10.308734+07', '2025-12-06 03:30:10.308734+07');
+INSERT INTO public."Images" VALUES ('7876b9ef-e123-44bd-9c08-8ec4f071037d', 'c0f3877d-b20a-447a-9b80-8331eb5ed674', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764966616/uploads/cl3.jpg', '2025-12-06 03:30:16.264524+07', '2025-12-06 03:30:16.264524+07');
+INSERT INTO public."Images" VALUES ('4be575cc-928f-43e1-808a-ac85d774f5a7', 'f73cf959-eea3-4eef-adf9-217d71e48172', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764966629/uploads/mpl1.jpg', '2025-12-06 03:30:28.397138+07', '2025-12-06 03:30:28.397138+07');
+INSERT INTO public."Images" VALUES ('a7c087ea-74a9-4d8d-b739-51fac81e4747', 'f73cf959-eea3-4eef-adf9-217d71e48172', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764966634/uploads/mpl2.jpg', '2025-12-06 03:30:34.656205+07', '2025-12-06 03:30:34.656205+07');
+INSERT INTO public."Images" VALUES ('e5069c9a-69ad-420f-9f76-3072ef2a90d8', 'f73cf959-eea3-4eef-adf9-217d71e48172', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764966641/uploads/mpl3.jpg', '2025-12-06 03:30:41.831274+07', '2025-12-06 03:30:41.831274+07');
+INSERT INTO public."Images" VALUES ('87af715c-17d5-40c3-82ef-d144566b3588', NULL, 'beb2fe2c-f111-42ce-b1f7-829ac5dcaac0', 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963733/uploads/cc3.jpg', '-infinity', '-infinity');
+
+
+--
+-- TOC entry 3546 (class 0 OID 19849)
+-- Dependencies: 230
+-- Data for Name: POITracking; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+INSERT INTO public."POITracking" VALUES ('012d213c-b625-4296-90d1-592245bb70c4', 'f0326629-a3ec-4afd-abb0-23c31914d848', 'fff9fc44-9c4a-45b9-8f72-9f31903763c1', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094438+07', '2025-12-09 00:57:59.094438+07', NULL);
+INSERT INTO public."POITracking" VALUES ('552aaa95-b420-406e-8353-ecfdc9cbefcf', 'f0326629-a3ec-4afd-abb0-23c31914d848', 'ef3415ff-1ad1-40dc-abb0-6a7f74a3c2c3', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094437+07', '2025-12-09 00:57:59.094437+07', NULL);
+INSERT INTO public."POITracking" VALUES ('71ed88cc-0338-4ee5-8e71-79530329485e', 'f0326629-a3ec-4afd-abb0-23c31914d848', 'ac672ac8-e8c3-48f9-85fe-65d546b2a4c0', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094436+07', '2025-12-09 00:57:59.094436+07', NULL);
+INSERT INTO public."POITracking" VALUES ('ae945e39-f053-4803-902d-33a7fb5f5d8f', 'f0326629-a3ec-4afd-abb0-23c31914d848', '5714cd32-e9b2-4d92-9892-dcfbd7e397f1', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094438+07', '2025-12-09 00:57:59.094438+07', NULL);
+INSERT INTO public."POITracking" VALUES ('b09e7f2b-4064-4c09-a6ae-5b0d4749b158', 'f0326629-a3ec-4afd-abb0-23c31914d848', 'ac9368a6-0618-4154-9311-f61dec6c364a', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094438+07', '2025-12-09 00:57:59.094438+07', NULL);
+INSERT INTO public."POITracking" VALUES ('cafd129f-1d98-4d4e-b1e0-56bcf63f542b', 'f0326629-a3ec-4afd-abb0-23c31914d848', '23dde10a-cd5b-4781-bcb0-608d8efc656d', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094437+07', '2025-12-09 00:57:59.094437+07', NULL);
+INSERT INTO public."POITracking" VALUES ('3e725948-e684-45b2-be26-4c19dd785cc5', '921b5cb8-34ed-44bc-a6f9-17e808ffafc1', '23dde10a-cd5b-4781-bcb0-608d8efc656d', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:59:40.461137+07', '2025-12-09 00:59:40.461137+07', NULL);
+INSERT INTO public."POITracking" VALUES ('41bc993b-a865-4479-b950-59cd1596bb81', '921b5cb8-34ed-44bc-a6f9-17e808ffafc1', 'ac672ac8-e8c3-48f9-85fe-65d546b2a4c0', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:59:40.461137+07', '2025-12-09 00:59:40.461137+07', NULL);
+INSERT INTO public."POITracking" VALUES ('58efc689-566b-4161-97c4-2ec41c1d74ea', '921b5cb8-34ed-44bc-a6f9-17e808ffafc1', '5714cd32-e9b2-4d92-9892-dcfbd7e397f1', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:59:40.461138+07', '2025-12-09 00:59:40.461138+07', NULL);
+INSERT INTO public."POITracking" VALUES ('763d6625-c341-4c3c-8fd8-df7853ce2a11', '921b5cb8-34ed-44bc-a6f9-17e808ffafc1', 'ef3415ff-1ad1-40dc-abb0-6a7f74a3c2c3', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:59:40.461137+07', '2025-12-09 00:59:40.461137+07', NULL);
+INSERT INTO public."POITracking" VALUES ('b72e33e1-6341-4bb9-9763-7e8d6caa7976', '921b5cb8-34ed-44bc-a6f9-17e808ffafc1', 'ac9368a6-0618-4154-9311-f61dec6c364a', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:59:40.461138+07', '2025-12-09 00:59:40.461138+07', NULL);
+INSERT INTO public."POITracking" VALUES ('d7498586-c7d6-465c-8386-bf357d2c335a', '921b5cb8-34ed-44bc-a6f9-17e808ffafc1', 'fff9fc44-9c4a-45b9-8f72-9f31903763c1', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:59:40.461138+07', '2025-12-09 00:59:40.461138+07', NULL);
+INSERT INTO public."POITracking" VALUES ('49cbb1d1-b854-43c0-9f35-c8c9e6e6571c', 'cbdd9b86-b857-4e45-a390-8658940ae9f7', 'b4298fa5-edbb-4741-b196-bb4fa50f0152', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:08:29.000834+07', '2025-12-09 01:08:29.000834+07', NULL);
+INSERT INTO public."POITracking" VALUES ('a46d91e2-6907-4940-886f-5a445bf94ec3', 'cbdd9b86-b857-4e45-a390-8658940ae9f7', '8687b39e-4bcc-4d18-8bdb-e43b24387dec', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:08:29.000833+07', '2025-12-09 01:08:29.000833+07', NULL);
+INSERT INTO public."POITracking" VALUES ('b6820c20-cec4-4c0c-b219-975ee05ebc79', 'cbdd9b86-b857-4e45-a390-8658940ae9f7', '73d62293-c992-4805-bed9-23af891a0fb9', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:08:29.000833+07', '2025-12-09 01:08:29.000833+07', NULL);
+INSERT INTO public."POITracking" VALUES ('26254d8a-6695-426e-b541-58e93be7d1ea', '8cef3d37-7794-4ad6-b176-79d203ab668e', '36bdfbbe-3a57-4334-a5dd-8454cc431ed1', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:11:02.468462+07', '2025-12-09 01:11:02.468462+07', NULL);
+INSERT INTO public."POITracking" VALUES ('a25c560e-8918-4dff-ad15-fb90fa379b19', '8cef3d37-7794-4ad6-b176-79d203ab668e', 'bf3f30db-f5fe-4092-8887-c40268f26026', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:11:02.468463+07', '2025-12-09 01:11:02.468463+07', NULL);
+INSERT INTO public."POITracking" VALUES ('ffbdb23c-c374-4edc-a877-68502b20c15a', '8cef3d37-7794-4ad6-b176-79d203ab668e', '4503f6fd-9885-4b9c-8e96-ceb828576245', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:11:02.468463+07', '2025-12-09 01:11:02.468463+07', NULL);
+INSERT INTO public."POITracking" VALUES ('06d81152-f85c-41a6-8135-bccc3defb932', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', 'd88adf97-4498-4448-b711-7116f94c49a3', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:58:16.010717+07', '2025-12-09 01:58:16.010717+07', NULL);
+INSERT INTO public."POITracking" VALUES ('23082ac4-91b3-4bed-8d54-65148cc394eb', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', '8d2e3022-8796-45d9-b7cc-9299bddcc9d3', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:58:16.010717+07', '2025-12-09 01:58:16.010717+07', NULL);
+INSERT INTO public."POITracking" VALUES ('450c1b82-8cbb-4ac5-951a-9b2040ce2b75', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', '5299b207-fe09-4156-ad7e-a619731a38c1', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:58:16.010717+07', '2025-12-09 01:58:16.010717+07', NULL);
+INSERT INTO public."POITracking" VALUES ('6c17f204-18bc-4d70-b299-cd9906bb7d76', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', '3747266a-9bf8-4391-a6c5-4d681e5c30f8', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:58:16.010717+07', '2025-12-09 01:58:16.010717+07', NULL);
+INSERT INTO public."POITracking" VALUES ('793ac6d0-5139-411b-a383-991182f515e9', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', '7debaad5-28ff-4bdb-abaa-8632e1974b23', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:58:16.010716+07', '2025-12-09 01:58:16.010716+07', NULL);
+INSERT INTO public."POITracking" VALUES ('95680b3d-e64c-4ad8-b420-f4f680474773', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', 'b9848e35-c074-42dd-bc80-68132299c703', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:58:16.010717+07', '2025-12-09 01:58:16.010717+07', NULL);
+INSERT INTO public."POITracking" VALUES ('c8cf415b-adff-4732-b5b1-07d2ea5df935', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', 'c2db8948-e5f0-4b8c-9ece-ce1a59456718', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:58:16.010717+07', '2025-12-09 01:58:16.010717+07', NULL);
+
+
+--
+-- TOC entry 3547 (class 0 OID 19866)
+-- Dependencies: 231
+-- Data for Name: SegmentTraking; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+INSERT INTO public."SegmentTraking" VALUES ('00ee0d45-2132-4b10-a93e-4f6917a723af', 'f0326629-a3ec-4afd-abb0-23c31914d848', '08388ed7-e394-4824-ab5d-9f8f9d0a4e52', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094376+07', '2025-12-09 00:57:59.094376+07', NULL, NULL, NULL);
+INSERT INTO public."SegmentTraking" VALUES ('7889dbef-3039-4783-93ba-48056b2cea8b', 'f0326629-a3ec-4afd-abb0-23c31914d848', 'a6ffbf63-6c52-4db7-a9fb-db360a55a420', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094379+07', '2025-12-09 00:57:59.094379+07', NULL, NULL, NULL);
+INSERT INTO public."SegmentTraking" VALUES ('d6d87216-32f8-46b1-b083-278cf094216a', 'f0326629-a3ec-4afd-abb0-23c31914d848', '2e6a750c-1cdb-40b4-904b-d76deffb8241', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094379+07', '2025-12-09 00:57:59.094379+07', NULL, NULL, NULL);
+INSERT INTO public."SegmentTraking" VALUES ('0a5425ac-301a-4588-ba93-c7d46c12d6f6', '921b5cb8-34ed-44bc-a6f9-17e808ffafc1', 'a6ffbf63-6c52-4db7-a9fb-db360a55a420', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:59:40.461074+07', '2025-12-09 00:59:40.461074+07', NULL, NULL, NULL);
+INSERT INTO public."SegmentTraking" VALUES ('942282de-5a97-4260-bc48-9e36fe51133f', '921b5cb8-34ed-44bc-a6f9-17e808ffafc1', '08388ed7-e394-4824-ab5d-9f8f9d0a4e52', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:59:40.461071+07', '2025-12-09 00:59:40.461071+07', NULL, NULL, NULL);
+INSERT INTO public."SegmentTraking" VALUES ('d45a8377-e076-4a16-a338-4bc91e6c7959', '921b5cb8-34ed-44bc-a6f9-17e808ffafc1', '2e6a750c-1cdb-40b4-904b-d76deffb8241', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:59:40.461074+07', '2025-12-09 00:59:40.461074+07', NULL, NULL, NULL);
+INSERT INTO public."SegmentTraking" VALUES ('9213d438-7099-4ef4-8979-9a0c00fc80cb', 'cbdd9b86-b857-4e45-a390-8658940ae9f7', '16ca2709-9631-4f78-91f4-a76d21c70ef4', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:08:29.000694+07', '2025-12-09 01:08:29.000694+07', NULL, NULL, NULL);
+INSERT INTO public."SegmentTraking" VALUES ('0d234691-c7db-4cc8-a6cf-7e287f494125', '8cef3d37-7794-4ad6-b176-79d203ab668e', '218d2157-898b-4d45-b62e-a5878e1865e6', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:11:02.468382+07', '2025-12-09 01:11:02.468382+07', NULL, NULL, NULL);
+INSERT INTO public."SegmentTraking" VALUES ('50fcb72c-3669-4fec-a6b3-379ce80f4c03', '8cef3d37-7794-4ad6-b176-79d203ab668e', '0ebc7a86-5a20-4e13-ba4f-6cdc230ba239', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:11:02.468374+07', '2025-12-09 01:11:02.468374+07', NULL, NULL, NULL);
+INSERT INTO public."SegmentTraking" VALUES ('a925ece0-6f72-45d1-bbd3-18d5a5c166c4', '8cef3d37-7794-4ad6-b176-79d203ab668e', 'e8aea2ea-be52-4d9b-b80f-c545166affaa', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:11:02.468382+07', '2025-12-09 01:11:02.468382+07', NULL, NULL, NULL);
+INSERT INTO public."SegmentTraking" VALUES ('18e779fe-7b0c-4589-be9d-92a3970457f7', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', 'ac10e114-c9bf-4879-bac7-8d0666192af4', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:58:16.010575+07', '2025-12-09 01:58:16.010575+07', NULL, NULL, NULL);
+INSERT INTO public."SegmentTraking" VALUES ('725881f5-83b4-4e67-b313-aa228907452a', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', 'bd27cba0-8a41-4129-a212-7524384b62e7', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:58:16.010575+07', '2025-12-09 01:58:16.010575+07', NULL, NULL, NULL);
+INSERT INTO public."SegmentTraking" VALUES ('ad282f55-7c9d-45c2-9e5e-2ba830496dc7', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', '0006f098-5b05-4880-967b-fd38faccf600', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:58:16.010572+07', '2025-12-09 01:58:16.010572+07', NULL, NULL, NULL);
+
+
+--
+-- TOC entry 3539 (class 0 OID 19735)
+-- Dependencies: 223
+-- Data for Name: TripCostRanges; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+INSERT INTO public."TripCostRanges" VALUES ('afb4922c-18f8-4fe4-badc-a53ca381d02c', 'f0326629-a3ec-4afd-abb0-23c31914d848', 2, 5, 10000.00, NULL, NULL, NULL, '2025-12-09 00:59:50.903951+07', '2025-12-09 00:59:50.903951+07', NULL);
+INSERT INTO public."TripCostRanges" VALUES ('fe0a9757-899e-4c64-9520-af8669a34c67', '921b5cb8-34ed-44bc-a6f9-17e808ffafc1', 2, 5, 20000.00, NULL, NULL, NULL, '2025-12-09 01:00:03.715553+07', '2025-12-09 01:00:03.715553+07', NULL);
+INSERT INTO public."TripCostRanges" VALUES ('718edcd1-a1f0-485f-be81-a0b83e2fbbbe', 'cbdd9b86-b857-4e45-a390-8658940ae9f7', 4, 8, 10000.00, NULL, NULL, NULL, '2025-12-09 01:08:53.844883+07', '2025-12-09 01:08:53.844883+07', NULL);
+INSERT INTO public."TripCostRanges" VALUES ('90787d25-e1cb-4e26-87b7-4bd3cea88364', 'cbdd9b86-b857-4e45-a390-8658940ae9f7', 9, 12, 5000.00, NULL, NULL, NULL, '2025-12-09 01:09:01.254791+07', '2025-12-09 01:09:01.254791+07', NULL);
+INSERT INTO public."TripCostRanges" VALUES ('0575d69e-f1d0-4c4a-9a6d-7e9aca7f1095', '8cef3d37-7794-4ad6-b176-79d203ab668e', 8, 13, 20000.00, NULL, NULL, NULL, '2025-12-09 01:11:18.223976+07', '2025-12-09 01:11:18.223976+07', NULL);
+INSERT INTO public."TripCostRanges" VALUES ('18e3ca34-f00c-4504-b922-37c1e90fbb64', '8cef3d37-7794-4ad6-b176-79d203ab668e', 14, 20, 15000.00, NULL, NULL, NULL, '2025-12-09 01:11:26.265068+07', '2025-12-09 01:11:26.265068+07', NULL);
+INSERT INTO public."TripCostRanges" VALUES ('1285bb87-e68f-4514-8501-62292a2e55e1', 'b6536c95-04d5-45ab-b4ea-39c9c85a3b79', 3, 10, 15000.00, NULL, NULL, NULL, '2025-12-09 01:51:33.150047+07', '2025-12-09 01:51:33.150047+07', NULL);
+INSERT INTO public."TripCostRanges" VALUES ('c81e192b-2287-4f17-9a4c-d18051f20599', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', 3, 10, 20000.00, NULL, NULL, NULL, '2025-12-09 01:58:44.245555+07', '2025-12-09 01:58:44.245555+07', NULL);
+
+
+--
+-- TOC entry 3540 (class 0 OID 19747)
+-- Dependencies: 224
+-- Data for Name: TripInvitations; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+
+
+--
+-- TOC entry 3541 (class 0 OID 19759)
+-- Dependencies: 225
+-- Data for Name: TripMembers; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+INSERT INTO public."TripMembers" VALUES ('1d45f6fd-cd37-4f6a-a10d-c636b5aa0f38', 'b6536c95-04d5-45ab-b4ea-39c9c85a3b79', '590c3a93-c921-4a5d-a435-9b524f8eceed', 'Member', '2025-12-09 02:05:49.898859+07', NULL, 'FullPayment', NULL, NULL, NULL, '2025-12-09 02:05:49.898838+07', '2025-12-09 02:05:49.898838+07', NULL, 15000.00);
+INSERT INTO public."TripMembers" VALUES ('859d5b72-7fac-4aaa-a3dd-5c349eee9a70', 'b6536c95-04d5-45ab-b4ea-39c9c85a3b79', '8dffbb2a-04f9-409d-b61b-809bf0e41629', 'Member', '2025-12-09 02:06:35.384878+07', NULL, 'FullPayment', NULL, NULL, NULL, '2025-12-09 02:06:35.384875+07', '2025-12-09 02:06:35.384875+07', NULL, 15000.00);
+INSERT INTO public."TripMembers" VALUES ('767fb13c-7e36-4b77-8b27-93b43e752496', 'b6536c95-04d5-45ab-b4ea-39c9c85a3b79', '8e650d91-38a4-4649-84bf-0118627ae995', 'Member', '2025-12-09 02:05:13.322957+07', NULL, 'FullPayment', NULL, NULL, NULL, '2025-12-09 02:05:13.322937+07', '2025-12-09 02:05:13.322937+07', NULL, 15000.00);
+
+
+--
+-- TOC entry 3536 (class 0 OID 19694)
+-- Dependencies: 220
+-- Data for Name: TripRules; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+INSERT INTO public."TripRules" VALUES ('a4cface5-c563-4c28-9853-1b35aa96261d', 'e7849579-130f-4fda-83f1-12c36f423fe0', 16, 30, 'None', 'Người tham gia vui lòng đem theo đầy đủ giấy tờ', NULL, NULL, NULL, '2025-12-06 01:46:38.222942+07', '2025-12-06 01:46:38.222942+07', NULL);
+INSERT INTO public."TripRules" VALUES ('0dcc681d-a976-4b13-841c-a4094190cd6c', '07384e47-2d07-4bfa-9aaa-d65b31762794', 16, 30, 'None', 'Không vứt rác trên bãi biển
+
+Khi chụp ảnh gần mép đá cần đi theo nhóm
+
+Người tham gia tự chuẩn bị đồ bơi cá nhân', NULL, NULL, NULL, '2025-12-06 01:34:42.923922+07', '2025-12-06 01:34:42.923922+07', NULL);
+INSERT INTO public."TripRules" VALUES ('958cb859-52eb-4a18-b1d3-aa48433fa5a1', '097b6315-9e60-46c4-a696-82e6b9f33aa1', 16, 30, 'None', 'Không tự ý trượt cát ở khu vực nguy hiểm
+
+Tuân thủ hướng dẫn khi chụp ảnh trong sa mạc cát
+
+Đến điểm tập trung đúng giờ để khởi hành jeep tour', NULL, NULL, NULL, '2025-12-06 02:07:55.978749+07', '2025-12-06 02:07:55.978749+07', NULL);
+INSERT INTO public."TripRules" VALUES ('3e1e6d26-372b-498a-9463-c5094d3e10df', '1776f71c-d5f0-4dbf-a25c-976880a1f583', 16, 30, 'None', 'Tôn trọng không gian văn hóa của người bản địa
+
+Không chụp ảnh trong khu vực cấm của nhà dài truyền thống
+
+Không đến gần chân thác khi chưa có hướng dẫn', NULL, NULL, NULL, '2025-12-06 02:14:33.59222+07', '2025-12-06 02:14:33.59222+07', NULL);
+INSERT INTO public."TripRules" VALUES ('c6e79266-ed6c-4f79-a891-ea7f196eb46c', '398b7598-f31c-431b-86e7-0a07e8976434', 16, 30, 'None', 'Không làm hư hỏng đèn lồng & kiến trúc cổ
+
+Tôn trọng không gian tĩnh lặng khu phố đêm
+
+Không xả rác xuống sông khi thả hoa đăng', NULL, NULL, NULL, '2025-12-06 02:15:21.144739+07', '2025-12-06 02:15:21.144739+07', NULL);
+INSERT INTO public."TripRules" VALUES ('8a370554-2d54-4e14-b60d-205e9280c3f5', 'cda6430f-2033-4359-9aad-9fd19c075006', 16, 30, 'None', 'Tuyệt đối không bẻ san hô
+
+Không dùng kem chống nắng gây hại san hô (khuyến cáo organic)
+
+Mọi hoạt động dưới nước phải mặc áo phao', NULL, NULL, NULL, '2025-12-06 02:16:14.613496+07', '2025-12-06 02:16:14.613496+07', NULL);
+INSERT INTO public."TripRules" VALUES ('07a58dff-3186-477c-9f06-6071150fcce0', 'd4e79751-9bce-4aff-91f7-7090abc3e330', 16, 30, 'None', 'Bắt buộc mang giày leo núi hoặc giày đế bám
+
+Không uống rượu bia trước giờ leo
+
+Thể trạng không phù hợp phải báo sớm cho leader', NULL, NULL, NULL, '2025-12-06 02:17:26.729181+07', '2025-12-06 02:17:26.729181+07', NULL);
+INSERT INTO public."TripRules" VALUES ('a71cf6f7-6879-4eba-b7ed-61771cbef5a4', 'fc6bd8aa-abf8-4d2d-bc67-b05d304030fa', 16, 30, 'None', 'Không tự ý cho động vật hoang dã ăn
+
+Không tách nhóm trong rừng
+
+Tắt đèn & không la lớn ở khu bảo tồn linh trưởng', NULL, NULL, NULL, '2025-12-06 02:17:55.060701+07', '2025-12-06 02:17:55.060701+07', NULL);
+INSERT INTO public."TripRules" VALUES ('6a3faeb0-0a1a-429f-87e6-e2b83c18922f', '81faae2f-63ed-4c8b-85b3-740bf729d4a5', 16, 30, 'None', 'Trang phục lịch sự khi vào khu đền
+
+Không quay clip phản cảm tại khu tâm linh
+
+Hạn chế nói lớn khi làm lễ', NULL, NULL, NULL, '2025-12-06 02:18:50.870201+07', '2025-12-06 02:18:50.870201+07', NULL);
+INSERT INTO public."TripRules" VALUES ('ab4382e6-3546-4b3e-b9ff-621eb2e093d9', '091f871c-f4f8-4009-8fdf-584a6e31d414', 16, 30, 'None', 'Mang áo phao khi di chuyển canoe
+
+Không hái cây rừng ngập mặn
+
+Tôn trọng không gian của cộng đồng địa phương', NULL, NULL, NULL, '2025-12-06 02:19:43.604791+07', '2025-12-06 02:19:43.604791+07', NULL);
+INSERT INTO public."TripRules" VALUES ('749811b2-6eaf-40e4-8ab6-e12112561c40', '09d1dac4-b35b-4cf1-9469-ea020385b9f3', 16, 30, 'None', 'Ảnh đăng phải có tone vàng chủ đạo.
+
+Flycam chụp được cảnh ruộng cong hình chữ S → +25 EXP.
+
+Mua xôi nếp Tú Lệ share team → mở “Buff no nê 2h”.', NULL, NULL, NULL, '2025-12-06 03:07:43.574726+07', '2025-12-06 03:07:43.574726+07', NULL);
+INSERT INTO public."TripRules" VALUES ('d36664dd-2fe1-455f-a469-10725637bd23', '86d98cca-5c49-4e8c-98db-9fb0dd04d8d6', 16, 30, 'None', 'Im lặng 3 phút giữa hồ để “nghe tiếng tự do”.
+
+Không dùng điện thoại sau 8:30PM → +20 Exp.
+
+Đốt lửa thành công không dùng bật lửa → “Badge Người Rừng”.', NULL, NULL, NULL, '2025-12-06 03:09:27.126778+07', '2025-12-06 03:09:27.126778+07', NULL);
+INSERT INTO public."TripRules" VALUES ('bd2bd621-8b78-4037-b865-5d2e1c78fb14', '816be859-1d7c-41e7-bf2a-08d7cb23e838', 16, 30, 'None', '“1/3 đường im lặng”: không nói chuyện.
+
+Viết reflection tối thiểu 200 chữ.
+
+Người giữ nhịp chuông → buff bình an cho team.', NULL, NULL, NULL, '2025-12-06 03:14:07.922065+07', '2025-12-06 03:14:07.922065+07', NULL);
+INSERT INTO public."TripRules" VALUES ('599dcf3e-b98a-4ca2-a8c2-ccb2fe966089', '553df8da-697a-49fb-a4de-41bd74d512d3', 16, 30, 'None', 'Người đầu mũi thuyền kể một truyền thuyết.
+
+Trời mưa → bonus EXP.
+
+Chụp ảnh có người chèo → “Respect Badge”.', NULL, NULL, NULL, '2025-12-06 03:19:16.664345+07', '2025-12-06 03:19:16.664345+07', NULL);
+INSERT INTO public."TripRules" VALUES ('9bc64c60-c5bc-4a22-9e76-073114ed8337', 'c0f3877d-b20a-447a-9b80-8331eb5ed674', 16, 30, 'None', 'Tự đi chợ, tự trả giá.
+
+Nhóm nào làm nước chấm ngon nhất → thắng.
+
+Ai bỏ cuộc thử đồ cay → danh hiệu “Môi Màu Hoàng Hôn”.', NULL, NULL, NULL, '2025-12-06 03:20:40.737311+07', '2025-12-06 03:20:40.737311+07', NULL);
+INSERT INTO public."TripRules" VALUES ('c24d50eb-eaee-429f-a884-f5d6b2b384a1', '74a7727b-d256-46aa-8e3b-c04f05b16809', 16, 30, 'None', 'Tắt dữ liệu di động từ 12h–18h.
+
+Mỗi người ghi lại 3 điều nhận ra (bằng giấy).
+
+Nếu không có mây → “Quest thay thế: tìm món địa phương lạ”.', NULL, NULL, NULL, '2025-12-06 03:21:09.749731+07', '2025-12-06 03:21:09.749731+07', NULL);
+INSERT INTO public."TripRules" VALUES ('ebd21c96-43de-4775-b982-fadc23c95a55', 'f73cf959-eea3-4eef-adf9-217d71e48172', 16, 30, 'None', 'Chụp ảnh không run tay tại điểm cao nhất → +15 EXP.
+
+Nếu ai hét “Không sợ nữa!” trên đỉnh đèo → buff dũng khí.
+
+Team phải luôn nhìn nhau và không ai được đi quá 300m một mình.', NULL, NULL, NULL, '2025-12-06 03:21:26.430567+07', '2025-12-06 03:21:26.430567+07', NULL);
+
+
+--
+-- TOC entry 3533 (class 0 OID 19663)
+-- Dependencies: 217
+-- Data for Name: TripTags; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+INSERT INTO public."TripTags" VALUES ('a42fff25-ac08-4531-8922-ca967fa7bc3c', 'Biển', '', NULL, NULL, NULL, '2025-12-04 00:02:39.080409+07', '2025-12-04 00:02:39.080409+07', NULL);
+INSERT INTO public."TripTags" VALUES ('11234b4d-03b1-404a-a185-b9118432b818', 'Leo núi & Trekking', 'Hành trình đi bộ đường dài chinh phục các đỉnh núi cao, băng rừng và khám phá thiên nhiên hoang sơ.', NULL, NULL, NULL, '2025-12-04 20:49:15.181868+07', '2025-12-04 20:49:15.181868+07', NULL);
+INSERT INTO public."TripTags" VALUES ('5ff22d7c-cecf-4ac9-a0ea-23851784c332', 'Ẩm thực (Food Tour)', 'Chuyến đi tập trung vào trải nghiệm ăn uống, thưởng thức đặc sản địa phương và văn hóa đường phố.', NULL, NULL, NULL, '2025-12-04 20:49:28.840674+07', '2025-12-04 20:49:28.840674+07', NULL);
+INSERT INTO public."TripTags" VALUES ('57b66aea-5dfc-49de-ac45-c321895f8bba', 'Hoàng hôn', 'string', NULL, NULL, NULL, '2025-12-06 02:11:41.362191+07', '2025-12-06 02:11:41.362191+07', NULL);
+INSERT INTO public."TripTags" VALUES ('48ee020c-3237-4db6-b2c0-b5960ec6af7c', 'Đồi cát', 'string', NULL, NULL, NULL, '2025-12-06 02:13:08.583118+07', '2025-12-06 02:13:08.583118+07', NULL);
+INSERT INTO public."TripTags" VALUES ('a09ee2c6-25a3-4041-83d1-2ded0a7c6292', 'Văn hóa ', 'string', NULL, NULL, NULL, '2025-12-06 02:14:11.410542+07', '2025-12-06 02:14:11.410542+07', NULL);
+INSERT INTO public."TripTags" VALUES ('cd7a8499-2b1f-4485-b204-30872d225db4', 'Thác nước', 'string', NULL, NULL, NULL, '2025-12-06 02:14:17.415158+07', '2025-12-06 02:14:17.415158+07', NULL);
+INSERT INTO public."TripTags" VALUES ('7438022e-89fb-4dc5-8845-39eaadd801c6', 'Cổ kính', 'string', NULL, NULL, NULL, '2025-12-06 02:15:36.356335+07', '2025-12-06 02:15:36.356335+07', NULL);
+INSERT INTO public."TripTags" VALUES ('f7761c8e-3648-446a-bd2e-5ac94cebb66e', 'Truyền thống', 'string', NULL, NULL, NULL, '2025-12-06 02:15:44.67633+07', '2025-12-06 02:15:44.67633+07', NULL);
+INSERT INTO public."TripTags" VALUES ('71ff1513-02bf-421c-b10b-55b3206053a3', 'Hoang dã', 'string', NULL, NULL, NULL, '2025-12-06 02:18:18.648802+07', '2025-12-06 02:18:18.648802+07', NULL);
+INSERT INTO public."TripTags" VALUES ('0412610e-e713-4726-bc3c-7412254e93c5', 'Khám phá', 'string', NULL, NULL, NULL, '2025-12-06 02:18:26.130665+07', '2025-12-06 02:18:26.130665+07', NULL);
+INSERT INTO public."TripTags" VALUES ('c8cadfe0-fa0e-4713-a5cf-3df2f6651c97', 'Lịch sử', 'string', NULL, NULL, NULL, '2025-12-06 02:19:09.817965+07', '2025-12-06 02:19:09.817965+07', NULL);
+INSERT INTO public."TripTags" VALUES ('efd239b9-3218-4dd6-aa2b-aa5e3b5a0ba7', 'Tâm linh', 'string', NULL, NULL, NULL, '2025-12-06 02:19:17.305907+07', '2025-12-06 02:19:17.305907+07', NULL);
+INSERT INTO public."TripTags" VALUES ('1e436bc1-e93a-4e14-89a6-ee3a6a42fd5d', 'Rừng', 'string', NULL, NULL, NULL, '2025-12-06 02:20:07.374105+07', '2025-12-06 02:20:07.374105+07', NULL);
+
+
+--
+-- TOC entry 3538 (class 0 OID 19718)
+-- Dependencies: 222
+-- Data for Name: TripTagRelations; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+INSERT INTO public."TripTagRelations" VALUES ('b057a4d2-1f19-45b6-af05-04a2f7c5276b', '07384e47-2d07-4bfa-9aaa-d65b31762794', 'a42fff25-ac08-4531-8922-ca967fa7bc3c', NULL, NULL, NULL, '2025-12-06 01:43:57.654961+07', '2025-12-06 01:43:57.654961+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('00315c9d-d17a-4874-ab01-ef0f0785232a', '07384e47-2d07-4bfa-9aaa-d65b31762794', '11234b4d-03b1-404a-a185-b9118432b818', NULL, NULL, NULL, '2025-12-06 01:43:58.380089+07', '2025-12-06 01:43:58.380089+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('785bdc4c-adad-4ece-98d1-19654a865cdf', '07384e47-2d07-4bfa-9aaa-d65b31762794', '5ff22d7c-cecf-4ac9-a0ea-23851784c332', NULL, NULL, NULL, '2025-12-06 01:43:59.112526+07', '2025-12-06 01:43:59.112526+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('9991d65c-6eeb-4895-93ea-c32201eb7407', 'e7849579-130f-4fda-83f1-12c36f423fe0', 'a42fff25-ac08-4531-8922-ca967fa7bc3c', NULL, NULL, NULL, '2025-12-06 01:46:41.52021+07', '2025-12-06 01:46:41.52021+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('7554bdc6-1970-4256-baa9-7159e3472ba4', 'e7849579-130f-4fda-83f1-12c36f423fe0', '5ff22d7c-cecf-4ac9-a0ea-23851784c332', NULL, NULL, NULL, '2025-12-06 01:46:42.85659+07', '2025-12-06 01:46:42.85659+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('ada8d9a0-5774-4436-9f34-b2f39cf8f91a', '097b6315-9e60-46c4-a696-82e6b9f33aa1', '48ee020c-3237-4db6-b2c0-b5960ec6af7c', NULL, NULL, NULL, '2025-12-06 02:13:15.946871+07', '2025-12-06 02:13:15.946871+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('8b1d5123-401b-45df-b426-b3e8c204ce94', '097b6315-9e60-46c4-a696-82e6b9f33aa1', '57b66aea-5dfc-49de-ac45-c321895f8bba', NULL, NULL, NULL, '2025-12-06 02:13:18.002998+07', '2025-12-06 02:13:18.002998+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('ed90eb04-6db4-4076-bb62-36c67217124e', '1776f71c-d5f0-4dbf-a25c-976880a1f583', 'a09ee2c6-25a3-4041-83d1-2ded0a7c6292', NULL, NULL, NULL, '2025-12-06 02:14:22.374649+07', '2025-12-06 02:14:22.374649+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('e0dd74b2-fbb9-4887-bfb4-0264b62c73a0', '1776f71c-d5f0-4dbf-a25c-976880a1f583', 'cd7a8499-2b1f-4485-b204-30872d225db4', NULL, NULL, NULL, '2025-12-06 02:14:23.490625+07', '2025-12-06 02:14:23.490625+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('050d9aa2-4873-4789-84fa-18a824743f82', '398b7598-f31c-431b-86e7-0a07e8976434', '7438022e-89fb-4dc5-8845-39eaadd801c6', NULL, NULL, NULL, '2025-12-06 02:15:52.38282+07', '2025-12-06 02:15:52.38282+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('822c048c-21b5-4781-a1f6-1b650c830368', '398b7598-f31c-431b-86e7-0a07e8976434', 'f7761c8e-3648-446a-bd2e-5ac94cebb66e', NULL, NULL, NULL, '2025-12-06 02:15:53.266242+07', '2025-12-06 02:15:53.266242+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('290ab53a-70b6-4dd3-8e50-7878a44b7b10', 'cda6430f-2033-4359-9aad-9fd19c075006', 'a42fff25-ac08-4531-8922-ca967fa7bc3c', NULL, NULL, NULL, '2025-12-06 02:16:29.466183+07', '2025-12-06 02:16:29.466183+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('aa7064ab-d560-4f97-8556-4eaa75b6ab9a', 'cda6430f-2033-4359-9aad-9fd19c075006', '5ff22d7c-cecf-4ac9-a0ea-23851784c332', NULL, NULL, NULL, '2025-12-06 02:16:32.114816+07', '2025-12-06 02:16:32.114816+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('637b4d02-511c-4c49-ac12-ea876c94ef3b', 'd4e79751-9bce-4aff-91f7-7090abc3e330', '11234b4d-03b1-404a-a185-b9118432b818', NULL, NULL, NULL, '2025-12-06 02:17:20.278241+07', '2025-12-06 02:17:20.278241+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('d147cc7b-545e-4277-8ee7-583a5a398c96', 'd4e79751-9bce-4aff-91f7-7090abc3e330', '5ff22d7c-cecf-4ac9-a0ea-23851784c332', NULL, NULL, NULL, '2025-12-06 02:17:21.626438+07', '2025-12-06 02:17:21.626438+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('99086f4e-f3ed-490e-bcb0-cd7a691bcd59', 'fc6bd8aa-abf8-4d2d-bc67-b05d304030fa', '71ff1513-02bf-421c-b10b-55b3206053a3', NULL, NULL, NULL, '2025-12-06 02:18:31.014242+07', '2025-12-06 02:18:31.014242+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('b09f58e8-973b-419f-a713-e10f15cc1d00', 'fc6bd8aa-abf8-4d2d-bc67-b05d304030fa', '0412610e-e713-4726-bc3c-7412254e93c5', NULL, NULL, NULL, '2025-12-06 02:18:32.046671+07', '2025-12-06 02:18:32.046671+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('9e66d43c-5cfd-4d77-90b8-c97df042e8b1', '81faae2f-63ed-4c8b-85b3-740bf729d4a5', 'c8cadfe0-fa0e-4713-a5cf-3df2f6651c97', NULL, NULL, NULL, '2025-12-06 02:19:22.153779+07', '2025-12-06 02:19:22.153779+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('1afddad7-15ef-45c4-9b83-c1b2e538d4aa', '81faae2f-63ed-4c8b-85b3-740bf729d4a5', 'efd239b9-3218-4dd6-aa2b-aa5e3b5a0ba7', NULL, NULL, NULL, '2025-12-06 02:19:22.941908+07', '2025-12-06 02:19:22.941908+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('58a6f05b-f173-4931-88e6-1877e60735fe', '81faae2f-63ed-4c8b-85b3-740bf729d4a5', 'a09ee2c6-25a3-4041-83d1-2ded0a7c6292', NULL, NULL, NULL, '2025-12-06 02:19:23.649601+07', '2025-12-06 02:19:23.649601+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('55777afb-f8ee-4197-a4a3-2d9d365d652a', '091f871c-f4f8-4009-8fdf-584a6e31d414', '1e436bc1-e93a-4e14-89a6-ee3a6a42fd5d', NULL, NULL, NULL, '2025-12-06 02:20:15.045417+07', '2025-12-06 02:20:15.045417+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('74b3e247-126b-44b6-85c8-a7c931b94aa4', '091f871c-f4f8-4009-8fdf-584a6e31d414', '5ff22d7c-cecf-4ac9-a0ea-23851784c332', NULL, NULL, NULL, '2025-12-06 02:20:16.10935+07', '2025-12-06 02:20:16.10935+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('88d8b34d-a255-4bfd-95b4-a91c36d751a8', '09d1dac4-b35b-4cf1-9469-ea020385b9f3', 'a09ee2c6-25a3-4041-83d1-2ded0a7c6292', NULL, NULL, NULL, '2025-12-06 03:08:05.224781+07', '2025-12-06 03:08:05.224781+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('aa9a06ad-a78b-40c6-a834-6cd2066445ae', '09d1dac4-b35b-4cf1-9469-ea020385b9f3', '5ff22d7c-cecf-4ac9-a0ea-23851784c332', NULL, NULL, NULL, '2025-12-06 03:08:06.357391+07', '2025-12-06 03:08:06.357391+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('fd3413c8-a79d-42f8-b5e9-2abe5411f8f0', '86d98cca-5c49-4e8c-98db-9fb0dd04d8d6', '1e436bc1-e93a-4e14-89a6-ee3a6a42fd5d', NULL, NULL, NULL, '2025-12-06 03:09:32.972305+07', '2025-12-06 03:09:32.972305+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('676c51f3-177d-4c89-99a9-ebd0a8fd7bc1', '86d98cca-5c49-4e8c-98db-9fb0dd04d8d6', '11234b4d-03b1-404a-a185-b9118432b818', NULL, NULL, NULL, '2025-12-06 03:09:33.763908+07', '2025-12-06 03:09:33.763908+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('d5a56d15-117a-44ac-8808-77f5c7bd057e', 'f73cf959-eea3-4eef-adf9-217d71e48172', 'a09ee2c6-25a3-4041-83d1-2ded0a7c6292', NULL, NULL, NULL, '2025-12-06 03:11:02.689939+07', '2025-12-06 03:11:02.689939+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('dbf6d81c-6e0b-4e57-a73f-eb01871ea89b', 'f73cf959-eea3-4eef-adf9-217d71e48172', '0412610e-e713-4726-bc3c-7412254e93c5', NULL, NULL, NULL, '2025-12-06 03:11:08.102907+07', '2025-12-06 03:11:08.102907+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('9bf90be8-aa10-40d8-b9e4-e3374ba8c63e', '74a7727b-d256-46aa-8e3b-c04f05b16809', '5ff22d7c-cecf-4ac9-a0ea-23851784c332', NULL, NULL, NULL, '2025-12-06 03:12:39.65568+07', '2025-12-06 03:12:39.65568+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('615becda-9a8c-4273-94f4-279ad14c7f22', '74a7727b-d256-46aa-8e3b-c04f05b16809', '0412610e-e713-4726-bc3c-7412254e93c5', NULL, NULL, NULL, '2025-12-06 03:12:41.627463+07', '2025-12-06 03:12:41.627463+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('ad800ad1-cfe1-40e8-9c3a-9b11ac5e7d19', '816be859-1d7c-41e7-bf2a-08d7cb23e838', '11234b4d-03b1-404a-a185-b9118432b818', NULL, NULL, NULL, '2025-12-06 03:14:15.507023+07', '2025-12-06 03:14:15.507023+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('e11ef6cc-3822-4ced-8a9c-e57bd4bf735b', '816be859-1d7c-41e7-bf2a-08d7cb23e838', '7438022e-89fb-4dc5-8845-39eaadd801c6', NULL, NULL, NULL, '2025-12-06 03:14:17.839377+07', '2025-12-06 03:14:17.839377+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('b261f9ca-542e-423f-8811-8b28bfc6f114', 'c0f3877d-b20a-447a-9b80-8331eb5ed674', 'a42fff25-ac08-4531-8922-ca967fa7bc3c', NULL, NULL, NULL, '2025-12-06 03:16:40.994863+07', '2025-12-06 03:16:40.994863+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('a8850716-abcf-4e84-9e99-8ee581c8502e', 'c0f3877d-b20a-447a-9b80-8331eb5ed674', '0412610e-e713-4726-bc3c-7412254e93c5', NULL, NULL, NULL, '2025-12-06 03:16:45.750797+07', '2025-12-06 03:16:45.750797+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('8c8bf0cc-4fb6-4c41-9c09-ffc426e6f4c6', '553df8da-697a-49fb-a4de-41bd74d512d3', 'a09ee2c6-25a3-4041-83d1-2ded0a7c6292', NULL, NULL, NULL, '2025-12-06 03:19:10.270853+07', '2025-12-06 03:19:10.270853+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('e57e8a9d-2d58-495f-9d01-556c12e2ba3e', '553df8da-697a-49fb-a4de-41bd74d512d3', 'efd239b9-3218-4dd6-aa2b-aa5e3b5a0ba7', NULL, NULL, NULL, '2025-12-06 03:19:14.067225+07', '2025-12-06 03:19:14.067225+07', NULL);
+INSERT INTO public."TripTagRelations" VALUES ('5ef6614a-c94f-4601-a326-2b65ca09ca91', '553df8da-697a-49fb-a4de-41bd74d512d3', '7438022e-89fb-4dc5-8845-39eaadd801c6', NULL, NULL, NULL, '2025-12-06 03:19:14.842785+07', '2025-12-06 03:19:14.842785+07', NULL);
+
+
+--
+-- TOC entry 3531 (class 0 OID 19646)
+-- Dependencies: 215
+-- Data for Name: __EFMigrationsHistory; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+
+-- Completed on 2025-12-08 12:20:33
+
+--
+-- PostgreSQL database dump complete
+--
+
