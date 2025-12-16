@@ -1,11 +1,3 @@
---
--- PostgreSQL database dump
---
-
--- Dumped from database version 16.10 (Ubuntu 16.10-0ubuntu0.24.04.1)
--- Dumped by pg_dump version 17.0
-
--- Started on 2025-12-08 12:20:30
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -17,11 +9,7 @@ SET xmloption = content;
 SET client_min_messages = warning;
 SET row_security = off;
 
---
--- TOC entry 3532 (class 0 OID 19651)
--- Dependencies: 216
--- Data for Name: Trips; Type: TABLE DATA; Schema: public; Owner: -
---
+
 
 
 INSERT INTO public."Trips" VALUES ('81faae2f-63ed-4c8b-85b3-740bf729d4a5', 'df790517-7517-4172-aeb1-af0de8d1acf3', NULL, NULL, false, 'Hành Trình Về Nguồn Đất Tổ', 'Ho Chi Minh City', '106.62966379999999', '10.8230989', 'Đền Hùng - Di Tích Cội Nguồn Dân Tộc Việt Nam', '105.3255046', NULL, '21.3684539', 'Hành Trình Về Nguồn Đất Tổ là khoảnh khắc để chúng ta quay lại nơi cội nguồn dân tộc. Trong không khí linh thiêng, chúng ta nhớ rằng tuổi trẻ không chỉ đi để vui — mà đi để hiểu, để biết mình thuộc về đâu.', 'Draft', 3, 10, NULL, NULL, NULL, '2025-12-06 01:57:12.710035+07', '2025-12-06 01:57:12.710032+07', NULL);
@@ -41,12 +29,6 @@ INSERT INTO public."Trips" VALUES ('091f871c-f4f8-4009-8fdf-584a6e31d414', 'df79
 INSERT INTO public."Trips" VALUES ('097b6315-9e60-46c4-a696-82e6b9f33aa1', 'df790517-7517-4172-aeb1-af0de8d1acf3', NULL, NULL, false, 'Hành Trình Dọc Miền Cát Trắng Bình Thuận', 'Ho Chi Minh City', NULL, NULL, 'Beach Co Thach', NULL, NULL, NULL, 'Hành Trình Dọc Miền Cát Trắng là chuỗi trải nghiệm nơi biển ôm lấy sa mạc, nơi nắng trải dài vô tận. Những bãi đá bảy màu và tiếng sóng vỗ không ngừng sẽ tạo nên một câu chuyện độc đáo của tuổi trẻ.', 'Published', 3, 10, NULL, NULL, NULL, '2025-12-06 01:54:18.068661+07', '2025-12-06 01:54:18.068654+07', NULL);
 
 
---
--- TOC entry 3537 (class 0 OID 19706)
--- Dependencies: 221
--- Data for Name: TripSegments; Type: TABLE DATA; Schema: public; Owner: -
---
-
 INSERT INTO public."TripSegments" VALUES ('08388ed7-e394-4824-ab5d-9f8f9d0a4e52', '07384e47-2d07-4bfa-9aaa-d65b31762794', 'Mien Dong Bus Station', '106.71093990000001', '10.8158355', 'BÁNH CANH LONG HƯƠNG - Cổng chào thành phố Bà Rịa', '107.15829889999999', '10.4998214', NULL, 1, 'Xe khách', NULL, NULL, NULL, '2025-12-06 03:37:39.01942+07', '2025-12-06 03:37:39.01942+07');
 INSERT INTO public."TripSegments" VALUES ('2e6a750c-1cdb-40b4-904b-d76deffb8241', '07384e47-2d07-4bfa-9aaa-d65b31762794', 'BÁNH CANH LONG HƯƠNG - Cổng chào thành phố Bà Rịa', '107.15829889999999', '10.4998214', 'Ba Ria', '107.1816257', '10.508928', NULL, 2, 'Xe khách', NULL, NULL, NULL, '2025-12-06 03:40:00.741075+07', '2025-12-06 03:40:00.741075+07');
 INSERT INTO public."TripSegments" VALUES ('a6ffbf63-6c52-4db7-a9fb-db360a55a420', '07384e47-2d07-4bfa-9aaa-d65b31762794', 'Ba Ria', '107.1816257', '10.508928', 'Vũng Tàu', '107.136224', '10.4113797', NULL, 3, 'Xe khách', NULL, NULL, NULL, '2025-12-06 03:42:03.280252+07', '2025-12-06 03:42:03.280252+07');
@@ -64,11 +46,7 @@ INSERT INTO public."TripSegments" VALUES ('218d2157-898b-4d45-b62e-a5878e1865e6'
 INSERT INTO public."TripSegments" VALUES ('e8aea2ea-be52-4d9b-b80f-c545166affaa', '09d1dac4-b35b-4cf1-9469-ea020385b9f3', 'Tú Lệ', '104.30355949999999', '21.782442099999997', 'Khau Phạ Pass', '104.271667', '21.775000000000002', NULL, 3, 'Xe khách', NULL, NULL, NULL, '2025-12-06 05:04:35.462604+07', '2025-12-06 05:04:35.462604+07');
 
 
---
--- TOC entry 3543 (class 0 OID 19788)
--- Dependencies: 227
--- Data for Name: SegmentPOIs; Type: TABLE DATA; Schema: public; Owner: -
---
+
 
 INSERT INTO public."SegmentPOIs" VALUES ('ac672ac8-e8c3-48f9-85fe-65d546b2a4c0', '08388ed7-e394-4824-ab5d-9f8f9d0a4e52', 'BÁNH CANH LONG HƯƠNG - Cổng chào thành phố Bà Rịa', '107.15829889999999', '10.4998214', NULL, 1, NULL, NULL, NULL, '2025-12-06 03:38:09.123286+07', '2025-12-06 03:38:09.123286+07', NULL);
 INSERT INTO public."SegmentPOIs" VALUES ('ef3415ff-1ad1-40dc-abb0-6a7f74a3c2c3', '2e6a750c-1cdb-40b4-904b-d76deffb8241', 'Ba Ria Green Stone Lake', '107.14722409999999', '10.5086427',  NULL, 1, NULL, NULL, NULL, '2025-12-06 03:40:24.984745+07', '2025-12-06 03:40:24.984745+07', NULL);
@@ -102,11 +80,7 @@ INSERT INTO public."SegmentPOIs" VALUES ('4503f6fd-9885-4b9c-8e96-ceb828576245',
 INSERT INTO public."SegmentPOIs" VALUES ('bf3f30db-f5fe-4092-8887-c40268f26026', 'e8aea2ea-be52-4d9b-b80f-c545166affaa', 'Khau Phạ Pass', '104.271667', '21.775000000000002',  NULL, 1, NULL, NULL, NULL, '2025-12-06 05:04:57.323022+07', '2025-12-06 05:04:57.323022+07', NULL);
 
 
---
--- TOC entry 3544 (class 0 OID 19800)
--- Dependencies: 228
--- Data for Name: POIActivities; Type: TABLE DATA; Schema: public; Owner: -
---
+
 
 INSERT INTO public."POIActivities" VALUES ('53462943-82f9-4b83-b8ea-2835242a824e', 'ac672ac8-e8c3-48f9-85fe-65d546b2a4c0', 'Trạm dừng chân, Nghỉ giữa chặng + Nạp năng lượng', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 03:38:48.597973+07', '2025-12-06 03:38:48.597973+07', NULL);
 INSERT INTO public."POIActivities" VALUES ('697ffa26-89b7-484e-a642-6c4bd6ae7079', 'ef3415ff-1ad1-40dc-abb0-6a7f74a3c2c3', 'Chụp ảnh concept', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 03:41:23.344864+07', '2025-12-06 03:41:23.344864+07', NULL);
@@ -149,11 +123,7 @@ INSERT INTO public."POIActivities" VALUES ('0279e6ed-fb59-4b78-bee7-0edebfb5f497
 INSERT INTO public."POIActivities" VALUES ('1a0536d3-0ef5-4e25-bc88-58ca6a7a43ea', 'bf3f30db-f5fe-4092-8887-c40268f26026', 'Bay dù lượn', false, NULL, NULL, NULL, NULL, NULL, '2025-12-06 05:05:15.750566+07', '2025-12-06 05:05:15.750566+07', NULL);
 
 
---
--- TOC entry 3534 (class 0 OID 19670)
--- Dependencies: 218
--- Data for Name: TripDepartures; Type: TABLE DATA; Schema: public; Owner: -
---
+
 
 INSERT INTO public."TripDepartures" VALUES ('f0326629-a3ec-4afd-abb0-23c31914d848', '07384e47-2d07-4bfa-9aaa-d65b31762794', NULL , '2026-01-01 08:00:00+07', '2026-01-03 20:00:00+07', 'Ready', '2025-12-25 08:00:00+07', '2025-12-29 08:00:00+07', NULL, NULL, NULL, '2025-12-09 00:57:58.93009+07', '2025-12-09 00:57:58.93009+07', NULL, NULL);
 INSERT INTO public."TripDepartures" VALUES ('921b5cb8-34ed-44bc-a6f9-17e808ffafc1', '07384e47-2d07-4bfa-9aaa-d65b31762794', NULL ,  '2026-01-20 08:00:00+07', '2026-01-23 20:00:00+07', 'Ready', '2026-01-13 08:00:00+07', '2026-01-17 08:00:00+07', NULL, NULL, NULL, '2025-12-09 00:59:40.291885+07', '2025-12-09 00:59:40.291885+07', NULL, NULL);
@@ -163,11 +133,6 @@ INSERT INTO public."TripDepartures" VALUES ('4bd3608a-9e9d-4d58-b102-b9a4553877e
 INSERT INTO public."TripDepartures" VALUES ('b6536c95-04d5-45ab-b4ea-39c9c85a3b79', '097b6315-9e60-46c4-a696-82e6b9f33aa1', NULL , '2025-11-20 08:00:00+07', '2025-11-23 20:00:00+07', 'Completed', '2025-11-13 08:00:00+07', '2025-11-17 08:00:00+07', NULL, NULL, NULL, '2025-10-09 01:11:02.32+07', '2025-10-09 01:11:02.32+07', NULL, NULL);
 
 
---
--- TOC entry 3545 (class 0 OID 19832)
--- Dependencies: 229
--- Data for Name: ActivtyTrackings; Type: TABLE DATA; Schema: public; Owner: -
---
 
 INSERT INTO public."ActivtyTrackings" VALUES ('01804c1e-b418-4ee0-b89b-61855e845687', 'f0326629-a3ec-4afd-abb0-23c31914d848', '697ffa26-89b7-484e-a642-6c4bd6ae7079', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094481+07', '2025-12-09 00:57:59.094481+07', NULL);
 INSERT INTO public."ActivtyTrackings" VALUES ('66430485-dc33-40ac-828d-8977b81a99c6', 'f0326629-a3ec-4afd-abb0-23c31914d848', '030a7eba-ce50-4ada-bded-c8d611823e90', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094483+07', '2025-12-09 00:57:59.094483+07', NULL);
@@ -204,20 +169,8 @@ INSERT INTO public."ActivtyTrackings" VALUES ('f9ab4f9a-d355-42c4-91d1-14e914596
 INSERT INTO public."ActivtyTrackings" VALUES ('fa954df7-99c4-4b8e-8424-5b8721c7e897', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', 'b5245746-ffcc-4251-b377-8ff46acb3896', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:58:16.010825+07', '2025-12-09 01:58:16.010825+07', NULL);
 
 
---
--- TOC entry 3535 (class 0 OID 19682)
--- Dependencies: 219
--- Data for Name: TripFeedbacks; Type: TABLE DATA; Schema: public; Owner: -
---
 
 INSERT INTO public."TripFeedbacks" VALUES ('beb2fe2c-f111-42ce-b1f7-829ac5dcaac0', '097b6315-9e60-46c4-a696-82e6b9f33aa1', '8e650d91-38a4-4649-84bf-0118627ae995', 'Chuyến đi đáng nhớ', 5, NULL, NULL, NULL, '2025-12-09 02:14:49.779574+07', '2025-12-09 02:14:49.779574+07', NULL);
-
-
---
--- TOC entry 3542 (class 0 OID 19771)
--- Dependencies: 226
--- Data for Name: Images; Type: TABLE DATA; Schema: public; Owner: -
---
 
 INSERT INTO public."Images" VALUES ('e29b9fca-54c8-4498-936e-952a20c326db', '07384e47-2d07-4bfa-9aaa-d65b31762794', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764962747/uploads/vungtau1.jpg', '2025-12-06 02:25:46.8582+07', '2025-12-06 02:25:46.858234+07');
 INSERT INTO public."Images" VALUES ('eb890687-d6bd-4bcd-8fc2-9ecc86943253', '07384e47-2d07-4bfa-9aaa-d65b31762794', NULL, 'https://res.cloudinary.com/db18zz55c/image/upload/v1764962755/uploads/vungtau2.jpg', '2025-12-06 02:25:54.512616+07', '2025-12-06 02:25:54.512616+07');
@@ -273,11 +226,6 @@ INSERT INTO public."Images" VALUES ('e5069c9a-69ad-420f-9f76-3072ef2a90d8', 'f73
 INSERT INTO public."Images" VALUES ('87af715c-17d5-40c3-82ef-d144566b3588', NULL, 'beb2fe2c-f111-42ce-b1f7-829ac5dcaac0', 'https://res.cloudinary.com/db18zz55c/image/upload/v1764963733/uploads/cc3.jpg', '-infinity', '-infinity');
 
 
---
--- TOC entry 3546 (class 0 OID 19849)
--- Dependencies: 230
--- Data for Name: POITracking; Type: TABLE DATA; Schema: public; Owner: -
---
 
 INSERT INTO public."POITracking" VALUES ('012d213c-b625-4296-90d1-592245bb70c4', 'f0326629-a3ec-4afd-abb0-23c31914d848', 'fff9fc44-9c4a-45b9-8f72-9f31903763c1', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094438+07', '2025-12-09 00:57:59.094438+07', NULL);
 INSERT INTO public."POITracking" VALUES ('552aaa95-b420-406e-8353-ecfdc9cbefcf', 'f0326629-a3ec-4afd-abb0-23c31914d848', 'ef3415ff-1ad1-40dc-abb0-6a7f74a3c2c3', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094437+07', '2025-12-09 00:57:59.094437+07', NULL);
@@ -306,21 +254,11 @@ INSERT INTO public."POITracking" VALUES ('95680b3d-e64c-4ad8-b420-f4f680474773',
 INSERT INTO public."POITracking" VALUES ('c8cf415b-adff-4732-b5b1-07d2ea5df935', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', 'c2db8948-e5f0-4b8c-9ece-ce1a59456718', 'UpComming', NULL, NULL, NULL, '2025-12-09 01:58:16.010717+07', '2025-12-09 01:58:16.010717+07', NULL);
 
 
---
--- TOC entry 3547 (class 0 OID 19866)
--- Dependencies: 231
--- Data for Name: SegmentTraking; Type: TABLE DATA; Schema: public; Owner: -
---
 
 INSERT INTO public."SegmentTraking" VALUES ('00ee0d45-2132-4b10-a93e-4f6917a723af', 'f0326629-a3ec-4afd-abb0-23c31914d848', '08388ed7-e394-4824-ab5d-9f8f9d0a4e52', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094376+07', '2025-12-09 00:57:59.094376+07', NULL, NULL, NULL);
 INSERT INTO public."SegmentTraking" VALUES ('7889dbef-3039-4783-93ba-48056b2cea8b', 'f0326629-a3ec-4afd-abb0-23c31914d848', 'a6ffbf63-6c52-4db7-a9fb-db360a55a420', 'UpComming', NULL, NULL, NULL, '2025-12-09 00:57:59.094379+07', '2025-12-09 00:57:59.094379+07', NULL, NULL, NULL);
 
 
---
--- TOC entry 3539 (class 0 OID 19735)
--- Dependencies: 223
--- Data for Name: TripCostRanges; Type: TABLE DATA; Schema: public; Owner: -
---
 
 INSERT INTO public."TripCostRanges" VALUES ('afb4922c-18f8-4fe4-badc-a53ca381d02c', 'f0326629-a3ec-4afd-abb0-23c31914d848', 2, 5, 10000.00, NULL, NULL, NULL, '2025-12-09 00:59:50.903951+07', '2025-12-09 00:59:50.903951+07', NULL);
 INSERT INTO public."TripCostRanges" VALUES ('fe0a9757-899e-4c64-9520-af8669a34c67', '921b5cb8-34ed-44bc-a6f9-17e808ffafc1', 2, 5, 20000.00, NULL, NULL, NULL, '2025-12-09 01:00:03.715553+07', '2025-12-09 01:00:03.715553+07', NULL);
@@ -332,37 +270,14 @@ INSERT INTO public."TripCostRanges" VALUES ('1285bb87-e68f-4514-8501-62292a2e55e
 INSERT INTO public."TripCostRanges" VALUES ('c81e192b-2287-4f17-9a4c-d18051f20599', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', 3, 10, 20000.00, NULL, NULL, NULL, '2025-12-09 01:58:44.245555+07', '2025-12-09 01:58:44.245555+07', NULL);
 
 
---
--- TOC entry 3540 (class 0 OID 19747)
--- Dependencies: 224
--- Data for Name: TripInvitations; Type: TABLE DATA; Schema: public; Owner: -
---
 
 
-
---
--- TOC entry 3541 (class 0 OID 19759)
--- Dependencies: 225
--- Data for Name: TripMembers; Type: TABLE DATA; Schema: public; Owner: -
---
 
 INSERT INTO public."TripMembers" VALUES ('1d45f6fd-cd37-4f6a-a10d-c636b5aa0f38', 'b6536c95-04d5-45ab-b4ea-39c9c85a3b79', '590c3a93-c921-4a5d-a435-9b524f8eceed', 'Member', '2025-12-09 02:05:49.898859+07', NULL , 15000.00, NULL , 'FullPayment', NULL, NULL, NULL, '2025-12-09 02:05:49.898838+07', '2025-12-09 02:05:49.898838+07', NULL);
 INSERT INTO public."TripMembers" VALUES ('859d5b72-7fac-4aaa-a3dd-5c349eee9a70', 'b6536c95-04d5-45ab-b4ea-39c9c85a3b79', '8dffbb2a-04f9-409d-b61b-809bf0e41629', 'Member', '2025-12-09 02:06:35.384878+07', NULL , 15000.00, NULL ,  'FullPayment', NULL, NULL, NULL, '2025-12-09 02:06:35.384875+07', '2025-12-09 02:06:35.384875+07', NULL);
 INSERT INTO public."TripMembers" VALUES ('767fb13c-7e36-4b77-8b27-93b43e752496', 'b6536c95-04d5-45ab-b4ea-39c9c85a3b79', '8e650d91-38a4-4649-84bf-0118627ae995', 'Member', '2025-12-09 02:05:13.322957+07', NULL ,15000.00, NULL ,  'FullPayment', NULL, NULL, NULL, '2025-12-09 02:05:13.322937+07', '2025-12-09 02:05:13.322937+07', NULL);
 
 
---
--- TOC entry 3536 (class 0 OID 19694)
--- Dependencies: 220
--- Data for Name: TripRules; Type: TABLE DATA; Schema: public; Owner: -
---
-
-
---
--- TOC entry 3533 (class 0 OID 19663)
--- Dependencies: 217
--- Data for Name: TripTags; Type: TABLE DATA; Schema: public; Owner: -
---
 
 INSERT INTO public."TripTags" VALUES ('a42fff25-ac08-4531-8922-ca967fa7bc3c', 'Biển', '', NULL, NULL, NULL, '2025-12-04 00:02:39.080409+07', '2025-12-04 00:02:39.080409+07', NULL);
 INSERT INTO public."TripTags" VALUES ('11234b4d-03b1-404a-a185-b9118432b818', 'Leo núi & Trekking', 'Hành trình đi bộ đường dài chinh phục các đỉnh núi cao, băng rừng và khám phá thiên nhiên hoang sơ.', NULL, NULL, NULL, '2025-12-04 20:49:15.181868+07', '2025-12-04 20:49:15.181868+07', NULL);
@@ -380,11 +295,6 @@ INSERT INTO public."TripTags" VALUES ('efd239b9-3218-4dd6-aa2b-aa5e3b5a0ba7', 'T
 INSERT INTO public."TripTags" VALUES ('1e436bc1-e93a-4e14-89a6-ee3a6a42fd5d', 'Rừng', 'string', NULL, NULL, NULL, '2025-12-06 02:20:07.374105+07', '2025-12-06 02:20:07.374105+07', NULL);
 
 
---
--- TOC entry 3538 (class 0 OID 19718)
--- Dependencies: 222
--- Data for Name: TripTagRelations; Type: TABLE DATA; Schema: public; Owner: -
---
 
 INSERT INTO public."TripTagRelations" VALUES ('b057a4d2-1f19-45b6-af05-04a2f7c5276b', '07384e47-2d07-4bfa-9aaa-d65b31762794', 'a42fff25-ac08-4531-8922-ca967fa7bc3c', NULL, NULL, NULL, '2025-12-06 01:43:57.654961+07', '2025-12-06 01:43:57.654961+07', NULL);
 INSERT INTO public."TripTagRelations" VALUES ('00315c9d-d17a-4874-ab01-ef0f0785232a', '07384e47-2d07-4bfa-9aaa-d65b31762794', '11234b4d-03b1-404a-a185-b9118432b818', NULL, NULL, NULL, '2025-12-06 01:43:58.380089+07', '2025-12-06 01:43:58.380089+07', NULL);
@@ -423,18 +333,4 @@ INSERT INTO public."TripTagRelations" VALUES ('a8850716-abcf-4e84-9e99-8ee581c85
 INSERT INTO public."TripTagRelations" VALUES ('8c8bf0cc-4fb6-4c41-9c09-ffc426e6f4c6', '553df8da-697a-49fb-a4de-41bd74d512d3', 'a09ee2c6-25a3-4041-83d1-2ded0a7c6292', NULL, NULL, NULL, '2025-12-06 03:19:10.270853+07', '2025-12-06 03:19:10.270853+07', NULL);
 INSERT INTO public."TripTagRelations" VALUES ('e57e8a9d-2d58-495f-9d01-556c12e2ba3e', '553df8da-697a-49fb-a4de-41bd74d512d3', 'efd239b9-3218-4dd6-aa2b-aa5e3b5a0ba7', NULL, NULL, NULL, '2025-12-06 03:19:14.067225+07', '2025-12-06 03:19:14.067225+07', NULL);
 INSERT INTO public."TripTagRelations" VALUES ('5ef6614a-c94f-4601-a326-2b65ca09ca91', '553df8da-697a-49fb-a4de-41bd74d512d3', '7438022e-89fb-4dc5-8845-39eaadd801c6', NULL, NULL, NULL, '2025-12-06 03:19:14.842785+07', '2025-12-06 03:19:14.842785+07', NULL);
-
-
---
--- TOC entry 3531 (class 0 OID 19646)
--- Dependencies: 215
--- Data for Name: __EFMigrationsHistory; Type: TABLE DATA; Schema: public; Owner: -
---
-
-
--- Completed on 2025-12-08 12:20:33
-
---
--- PostgreSQL database dump complete
---
 
