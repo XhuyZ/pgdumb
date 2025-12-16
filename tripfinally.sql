@@ -334,9 +334,19 @@ INSERT INTO public."TripTagRelations" VALUES ('8c8bf0cc-4fb6-4c41-9c09-ffc426e6f
 INSERT INTO public."TripTagRelations" VALUES ('e57e8a9d-2d58-495f-9d01-556c12e2ba3e', '553df8da-697a-49fb-a4de-41bd74d512d3', 'efd239b9-3218-4dd6-aa2b-aa5e3b5a0ba7', NULL, NULL, NULL, '2025-12-06 03:19:14.067225+07', '2025-12-06 03:19:14.067225+07', NULL);
 INSERT INTO public."TripTagRelations" VALUES ('5ef6614a-c94f-4601-a326-2b65ca09ca91', '553df8da-697a-49fb-a4de-41bd74d512d3', '7438022e-89fb-4dc5-8845-39eaadd801c6', NULL, NULL, NULL, '2025-12-06 03:19:14.842785+07', '2025-12-06 03:19:14.842785+07', NULL);
 
+INSERT INTO public."TripCostRanges" VALUES ('afb4922c-18f8-4fe4-badc-a53ca381d02c', 'f0326629-a3ec-4afd-abb0-23c31914d848', 2, 5, 10000.00, NULL, NULL, NULL, '2025-12-09 00:59:50.903951+07', '2025-12-09 00:59:50.903951+07', NULL);
+INSERT INTO public."TripCostRanges" VALUES ('fe0a9757-899e-4c64-9520-af8669a34c67', '921b5cb8-34ed-44bc-a6f9-17e808ffafc1', 2, 5, 20000.00, NULL, NULL, NULL, '2025-12-09 01:00:03.715553+07', '2025-12-09 01:00:03.715553+07', NULL);
+INSERT INTO public."TripCostRanges" VALUES ('718edcd1-a1f0-485f-be81-a0b83e2fbbbe', 'cbdd9b86-b857-4e45-a390-8658940ae9f7', 4, 8, 10000.00, NULL, NULL, NULL, '2025-12-09 01:08:53.844883+07', '2025-12-09 01:08:53.844883+07', NULL);
+INSERT INTO public."TripCostRanges" VALUES ('90787d25-e1cb-4e26-87b7-4bd3cea88364', 'cbdd9b86-b857-4e45-a390-8658940ae9f7', 9, 12, 5000.00, NULL, NULL, NULL, '2025-12-09 01:09:01.254791+07', '2025-12-09 01:09:01.254791+07', NULL);
+INSERT INTO public."TripCostRanges" VALUES ('0575d69e-f1d0-4c4a-9a6d-7e9aca7f1095', '8cef3d37-7794-4ad6-b176-79d203ab668e', 8, 13, 20000.00, NULL, NULL, NULL, '2025-12-09 01:11:18.223976+07', '2025-12-09 01:11:18.223976+07', NULL);
+INSERT INTO public."TripCostRanges" VALUES ('18e3ca34-f00c-4504-b922-37c1e90fbb64', '8cef3d37-7794-4ad6-b176-79d203ab668e', 14, 20, 15000.00, NULL, NULL, NULL, '2025-12-09 01:11:26.265068+07', '2025-12-09 01:11:26.265068+07', NULL);
+INSERT INTO public."TripCostRanges" VALUES ('1285bb87-e68f-4514-8501-62292a2e55e1', 'b6536c95-04d5-45ab-b4ea-39c9c85a3b79', 3, 10, 15000.00, NULL, NULL, NULL, '2025-12-09 01:51:33.150047+07', '2025-12-09 01:51:33.150047+07', NULL);
+INSERT INTO public."TripCostRanges" VALUES ('c81e192b-2287-4f17-9a4c-d18051f20599', '4bd3608a-9e9d-4d58-b102-b9a4553877e3', 3, 10, 20000.00, NULL, NULL, NULL, '2025-12-09 01:58:44.245555+07', '2025-12-09 01:58:44.245555+07', NULL);
+
 INSERT INTO public."TripInsurances" ("Id","TripId","InsuranceId","CreatedBy","LastUpdatedBy","DeletedBy","CreatedTime","LastUpdatedTime","DeletedTime") VALUES
 	 ('a002d8ba-2f5b-42a3-8565-97563e0a2647'::uuid,'07384e47-2d07-4bfa-9aaa-d65b31762794'::uuid,'402fc196-a98b-426d-8493-5e6e0227814e'::uuid,NULL,NULL,NULL,'2025-12-16 15:43:40.713658','2025-12-16 15:43:40.713658',NULL),
 	 ('12d0d88c-bd80-4ac1-9c97-3ba988b5bff5'::uuid,'091f871c-f4f8-4009-8fdf-584a6e31d414'::uuid,'402fc196-a98b-426d-8493-5e6e0227814e'::uuid,NULL,NULL,NULL,'2025-12-16 15:44:12.312155','2025-12-16 15:44:12.312155',NULL);
 INSERT INTO public."Insurances" ("Id","Name","ProviderName","Price","Benefit","MaxCoverageAmount","IsActive","PdfAttachment","CreatorId","CreatedBy","LastUpdatedBy","DeletedBy","CreatedTime","LastUpdatedTime","DeletedTime") VALUES
 	 ('402fc196-a98b-426d-8493-5e6e0227814e'::uuid,'Bảo hiểm chuyến đi DatViet','DatViet',2000,'Đảm bảo một số thông tin an toàn về hành lý, tất cả sẽ được bảo hộ và hoàn trả với các quy định tron file pdf. ',2000000,true,'https://res.cloudinary.com/db18zz55c/image/upload/v1765899814/uploads/Be_Bold_Moonshot_Poster.pdf','df790517-7517-4172-aeb1-af0de8d1acf3'::uuid,NULL,NULL,NULL,'2025-12-16 15:43:20.144591','2025-12-16 15:43:20.144591',NULL);
+
 
