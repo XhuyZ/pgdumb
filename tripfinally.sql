@@ -334,3 +334,9 @@ INSERT INTO public."TripTagRelations" VALUES ('8c8bf0cc-4fb6-4c41-9c09-ffc426e6f
 INSERT INTO public."TripTagRelations" VALUES ('e57e8a9d-2d58-495f-9d01-556c12e2ba3e', '553df8da-697a-49fb-a4de-41bd74d512d3', 'efd239b9-3218-4dd6-aa2b-aa5e3b5a0ba7', NULL, NULL, NULL, '2025-12-06 03:19:14.067225+07', '2025-12-06 03:19:14.067225+07', NULL);
 INSERT INTO public."TripTagRelations" VALUES ('5ef6614a-c94f-4601-a326-2b65ca09ca91', '553df8da-697a-49fb-a4de-41bd74d512d3', '7438022e-89fb-4dc5-8845-39eaadd801c6', NULL, NULL, NULL, '2025-12-06 03:19:14.842785+07', '2025-12-06 03:19:14.842785+07', NULL);
 
+INSERT INTO public."TripInsurances" ("Id","TripId","InsuranceId","CreatedBy","LastUpdatedBy","DeletedBy","CreatedTime","LastUpdatedTime","DeletedTime") VALUES
+	 ('a002d8ba-2f5b-42a3-8565-97563e0a2647'::uuid,'07384e47-2d07-4bfa-9aaa-d65b31762794'::uuid,'402fc196-a98b-426d-8493-5e6e0227814e'::uuid,NULL,NULL,NULL,'2025-12-16 15:43:40.713658','2025-12-16 15:43:40.713658',NULL),
+	 ('12d0d88c-bd80-4ac1-9c97-3ba988b5bff5'::uuid,'091f871c-f4f8-4009-8fdf-584a6e31d414'::uuid,'402fc196-a98b-426d-8493-5e6e0227814e'::uuid,NULL,NULL,NULL,'2025-12-16 15:44:12.312155','2025-12-16 15:44:12.312155',NULL);
+INSERT INTO public."Insurances" ("Id","Name","ProviderName","Price","Benefit","MaxCoverageAmount","IsActive","PdfAttachment","CreatorId","CreatedBy","LastUpdatedBy","DeletedBy","CreatedTime","LastUpdatedTime","DeletedTime") VALUES
+	 ('402fc196-a98b-426d-8493-5e6e0227814e'::uuid,'Bảo hiểm chuyến đi DatViet','DatViet',2000,'Đảm bảo một số thông tin an toàn về hành lý, tất cả sẽ được bảo hộ và hoàn trả với các quy định tron file pdf. ',2000000,true,'https://res.cloudinary.com/db18zz55c/image/upload/v1765899814/uploads/Be_Bold_Moonshot_Poster.pdf','df790517-7517-4172-aeb1-af0de8d1acf3'::uuid,NULL,NULL,NULL,'2025-12-16 15:43:20.144591','2025-12-16 15:43:20.144591',NULL);
+
